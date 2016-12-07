@@ -1,0 +1,22 @@
+{
+  "name": "stream1_project",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Nick Tate <ntate6630@yahoo.co.uk>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ntate6630/cooking_app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.9",
+    "angular-route": "^1.5.9"
+  }
+}
