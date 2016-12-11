@@ -1,42 +1,51 @@
-# Angular Todo App
+# Stream 1 Project
 
 ## Overview
 
 ### What is this app for?
 
-This is a Todo app. It helps users to keep track of any things that they have todo.
+This is a cooking website to demonstrate usage of different learnt on the course.
 
 ### What does it do?
 
-This app will allow users to register and login. Once the users have done that, they'll be able to create items to add to their todo list. Once they've created their todo list, they'll be able to update the status of each item and even delete items!
+- This website will allow users to search and browse cooking recipes.
+- Follow the instructions for a recipe. 
+- Watch videos of people cooking.
+- Add items to a shopping basket to buy.
+- Create an account, login/logout.
+- Add personal details in a form to be able to buy the itmes in the shopping basket.
+- Sign up for an Email newsletter.
 
 ### How does it work
 
-This app uses JSON Web Tokens to authenticate users and keep them logged in. All the data is consumed from an API hosted on Heroku using AngularJS. The site is styled with Bootstrap.
-
+This app uses JSON Web Tokens to authenticate users and keep them logged in. All the data is consumed from an API hosted on Heroku using AngularJS. The site is styled with CSS and flexbox.
 ## Features
 
 ### Existing Features
-- None yet!
+- Header
+- Login, Logout, Register links added.
+- Attractive looking font from google fonts used for the main logo and custom made images.
+- Nav bar with button links that change colour with mouse hover over them.
+- Responsive web design changes the layout when viewed on either mobile, tablet or full size desktop screens.
 
 ### Features Left to Implement
 - User Based Features
-	- Registration
-	- Login
-	- Logout
-- Todo Based Features
-	- Creating Todo Items
-	- Retrieving Todo Items
-	- Updating Todo Items
-	- Deleting Todo Items
- 
+	- Registration.
+	- Login.
+	- Logout.
+	- Search box.
+	- Forms for user to sign up.
+	- forms for adding user account details to be able to buy items once registered and signed in.
+	- Newsletter Email signup.
+	- Content for the body section of the web pages.
+	- Shopping basket.
+	- all the AngularJS code to make the site work.
+
 ## Tech Used
 
 ### Some the tech used includes:
 - [AngularJS](https://angularjs.org/)
 	- We use **AngularJS** to handle page routing, we also use it to make calls to the REST API and build custom directives
-- [Bootstrap](http://getbootstrap.com/)
-	- We use **Bootstrap** to give our project a simple, responsive layout
 - [npm](https://www.npmjs.com/)
 	- We use **npm** to help manage some of the dependencies in our application
 - [bower](https://bower.io/)
