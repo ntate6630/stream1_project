@@ -1,19 +1,19 @@
 {
   "name": "stream1_project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ntate6630/cooking_app.git"
+    "url": "git+https://github.com/ntate6630/stream1_project.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ntate6630/cooking_app/issues"
+    "url": "https://github.com/ntate6630/stream1_project/issues"
   },
-  "homepage": "https://github.com/ntate6630/cooking_app#readme"
+  "homepage": "https://github.com/ntate6630/stream1_project#readme",
+  "description": ""
 }

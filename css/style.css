@@ -1,0 +1,154 @@
+
+body{
+	
+}
+
+#accountAccessBar{
+		background: linear-gradient(90deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.2) 15%,
+		rgba(255,255, 255, 0.2) 85%,
+		rgba(255, 255, 255, 0) 100%);
+	flex:1;
+	width:auto;
+	height:20px;
+	text-align:right;
+	word-spacing:1em;
+	background-color:#421010;
+}
+
+.accountAccess a{
+	margin-right:10px;
+	font-size:15px;
+	font-family:'Roboto', sans-serif;
+	color:White;
+}
+
+#pageHeader{
+		background: linear-gradient(90deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.2) 15%,
+		rgba(255,255, 255, 0.2) 85%,
+		rgba(255, 255, 255, 0) 100%);
+	display:flex;
+	width:auto;
+    height:100px;
+    background-color:#421010;
+}
+
+img{
+	opacity:0.5;
+	width:500px;
+	height:100px;
+	position:absolute;
+	left:50px;
+	top:29px;
+	z-index:-1;
+}
+
+#logo{
+	z-index:1;
+	margin-left:50px;
+	margin-top:-45px;
+	text-align:left;
+	font-size:35px;
+	font-family: 'Pinyon Script', cursive;
+	color:White;
+}
+
+.flex-navbar{
+	display:flex;
+	flex-flow:row wrap;
+  	width:auto;
+    height: 34px;
+    background-color:White;
+}
+
+.button:hover {
+	background-color:Brown;
+}
+
+.button {
+    background-color:#FFC240;
+    width:100px;
+    height:25px;
+    margin:2px;
+	color:#FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	text-align:center;
+}
+
+@media screen and (max-width: 1000px){
+	#accountAccessBar{
+		word-spacing:-10em;
+	}
+	
+	.accountAccess a{
+		margin-right:50px;
+		font-size:13px;
+		font-family:'Roboto', sans-serif;
+		color:White;
+	}
+	
+	img{
+		opacity:0.5;
+		width:250px;
+		height:50px;
+		position:absolute;
+		left:50px;
+		top:35px;
+		z-index:-1
+	}
+	
+	#logo{
+		text-align:left;
+		margin-top:-15px;
+		margin-left:50px;
+		font-size:18px;
+	}
+	
+	#pageHeader{
+		height:65px;
+	}
+}
+	
+@media screen and (max-width: 500px){
+	#accountAccessBar{
+		word-spacing:-10em;
+	}
+	
+	.accountAccess a{
+		margin-right:50px;
+		font-size:10px;
+		font-family:'Roboto', sans-serif;
+		color:White;
+	}
+	
+	img{
+		opacity:0.5;
+		width:200px;
+		height:50px;
+		position:absolute;
+		left:50;
+		top:29px;
+		z-index:-1
+	}
+	
+	#logo{
+		text-align:left;
+		margin-top:-15px;
+		margin-left:50px;
+		font-size:15px;
+	}
+	
+	#pageHeader{
+		height:50px;
+	}
+	
+	.button{
+		height:21px;
+		width:67px;
+		font-size:10px;
+	}
+}
