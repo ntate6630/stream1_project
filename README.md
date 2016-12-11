@@ -48,7 +48,7 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 	- I use **AngularJS** to handle page routing, I also use it to make calls to the REST API and build custom directives.
 	- AngularJS is used to create the search box function and to change the content in the body of the web page.
 - [npm](https://www.npmjs.com/)
-	- We use **npm** to help manage some of the dependencies in our application
+	- **npm** to help manage some of the dependencies in our application
 - [bower](https://bower.io/)
 	- **Bower** is used to manage the installation of our libraries and frameworks
  
