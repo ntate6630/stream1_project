@@ -1,6 +1,6 @@
 
 body{
-	
+
 }
 
 #accountAccessBar{
@@ -79,6 +79,13 @@ img{
 	text-align:center;
 }
 
+ng-view{
+	font-size:20px;
+	font-family:'Roboto', sans-serif;
+	color:Black;
+	text-align:left;
+}
+
 @media screen and (max-width: 1000px){
 	#accountAccessBar{
 		word-spacing:-10em;
@@ -116,17 +123,18 @@ img{
 @media screen and (max-width: 500px){
 	#accountAccessBar{
 		word-spacing:-10em;
+		text-align:center;
 	}
 	
 	.accountAccess a{
-		margin-right:50px;
+		margin-right:20px;
 		font-size:10px;
 		font-family:'Roboto', sans-serif;
 		color:White;
 	}
 	
 	img{
-		opacity:0.5;
+		opacity:0.5;ttp
 		width:200px;
 		height:50px;
 		position:absolute;

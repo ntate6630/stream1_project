@@ -1,13 +1,9 @@
-angular.module('TodoApp', ['ngRoute', 'RouteControllers']);
+angular.module('cookingApp', ['ngRoute', 'RouteControllers']);
  
-angular.module('TodoApp').config(function($routeProvider) {
+angular.module('cookingApp').config(function($routeProvider) {
  
-    $routeProvider.when('/', {
-        templateUrl: 'templates/home.html',
-        controller: 'HomeController'
-    })
-    .when('/accounts/register', {
-        templateUrl: 'templates/register.html',
-        controller: 'RegisterController'
-    });
+    $routeProvider.when('/accounts/register', {
+		templateUrl: 'templates/register.html',
+		controller: 'RegisterController'
+	});
 });
