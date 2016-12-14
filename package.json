@@ -15,5 +15,7 @@
     "url": "https://github.com/ntate6630/stream1_project/issues"
   },
   "homepage": "https://github.com/ntate6630/stream1_project#readme",
-  "description": ""
+  "description": "This is a cooking website to demonstrate usage of different learnt on the course.",
+  "dependencies": {},
+  "devDependencies": {}
 }
