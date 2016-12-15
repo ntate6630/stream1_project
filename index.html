@@ -4,9 +4,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stream 1 Project - Cooking Website</title>
-    <!--<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.min.js"></script>
 	<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
 	<link rel="stylesheet" type="text/css"href="css/style.css">
@@ -15,9 +17,9 @@
 <body>
 	<div id="accountAccessBar">
 		<div class="accountAccess">
-			<a href="#/login">Login</a>
-			<a href="#/logout">Logout</a>
-			<a href="#/register">Register</a>
+			<a href="#/accounts/login">Login</a>
+			<a href="#/accounts/logout">Logout</a>
+			<a href="#/accounts/register">Register</a>
 		</div>
 	</div>
     <div id="header">
@@ -28,21 +30,15 @@
 			</div>
 		</div>
 	</div>
-		
 	</header>
 	<nav>
 		<div class="flex-navbar navbar">
 			<div class="button"><a href="#/recipes">Recipes</a></div>
-			<div class="button"><a href="#/howTo">How To</div>
-			<div class="button"><a href="#/video">Video</div>  
-			<div class="button"><a href="#/shop">Shop</div>
+			<div class="button"><a href="#/howTo">How To</a></div>
+			<div class="button"><a href="#/video">Video</a></div>  
+			<div class="button"><a href="#/shop">Shop</a></div>
 		</div>
 	</nav>
-	<div id="container">
-		<div class="content">
-		</div>
-	</div>
-	
     <div ng-view>
  
     </div>
