@@ -1,4 +1,8 @@
 angular.module('RouteControllers', [])
+
+	.controller('HomeController', function($scope) {
+        $scope.title = "Welcome To Angular Todo!";
+    })
     .controller('RegisterController', function($scope, $location, UserAPIService, store) {
 
         $scope.registrationUser = {};

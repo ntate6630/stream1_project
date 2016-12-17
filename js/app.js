@@ -1,11 +1,21 @@
-angular.module('cookingapp', ['ngRoute', 'angular-storage', 'RouteControllers', 'UserService']);
 
-angular.module('cookingapp').config(function($routeProvider) {
+/*angular.module('cookingApp', ['ngRoute', 'angular-storage', 'RouteControllers', 'UserService']);*/
+angular.module('cookingApp', ['ngRoute', 'angular-storage', 'RouteControllers']);
 
-	$routeProvider.when('/accounts/register', {
+angular.module('cookingApp').config(function($routeProvider) {
+
+	$routeProvider.when('/', {
+		templateUrl: 'templates/home.html',
+		controller: 'HomeController'
+	})
+	.when('/accounts/register', {
 		templateUrl: 'templates/register.html',
 		controller: 'RegisterController'
-	});/*
+	})
+	.when('/test', {
+		templateUrl: 'templates/test.html',
+		controller: 'TestController'
+	})
 	.when('/accounts/login', {
 		templateUrl: 'templates/login.html',
 		controller: 'LoginController'
@@ -22,12 +32,12 @@ angular.module('cookingapp').config(function($routeProvider) {
 		templateUrl: 'templates/howto.html',
 		controller: 'HowToController',
 	})
-	.when)'/video', {
+	.when('/video', {
 		templateUrl: 'templates/video.html',
 		controller: 'VideoController',
 	})
 	.when('/shop', {
 		templateUrl: 'templates/shop.html',
 		controller: 'ShopController',
-	});*/
+	});
 });
