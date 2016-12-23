@@ -1,6 +1,5 @@
 
-/*angular.module('cookingApp', ['ngRoute', 'angular-storage', 'RouteControllers', 'UserService']);*/
-angular.module('cookingApp', ['ngRoute', 'angular-storage', 'RouteControllers']);
+angular.module('cookingApp', ['ngRoute', 'angular-storage', 'RouteControllers', 'UserService']);
 
 angular.module('cookingApp').config(function($routeProvider) {
 
@@ -11,10 +10,6 @@ angular.module('cookingApp').config(function($routeProvider) {
 	.when('/accounts/register', {
 		templateUrl: 'templates/register.html',
 		controller: 'RegisterController'
-	})
-	.when('/test', {
-		templateUrl: 'templates/test.html',
-		controller: 'TestController'
 	})
 	.when('/accounts/login', {
 		templateUrl: 'templates/login.html',

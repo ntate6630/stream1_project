@@ -1,7 +1,7 @@
 angular.module('RouteControllers', [])
 
 	.controller('HomeController', function($scope) {
-        $scope.title = "Welcome To Angular Todo!";
+        $scope.title = "Home";
     })
     .controller('RegisterController', function($scope, $location, UserAPIService, store) {
 
@@ -13,7 +13,7 @@ angular.module('RouteControllers', [])
                 $scope.token = results.data.token;
                 store.set('username', $scope.registrationUser.username);
                 store.set('authToken', $scope.token);
-                $location.path("/todo");
+                $location.path("templates/recipes.html");
             }).catch(function(err) {
                 console.log(err.data);
             });
@@ -30,6 +30,7 @@ angular.module('RouteControllers', [])
                         && $scope.data.password == $scope.registrationUser.password) {
                         
                         $scope.login();
+					/*	ng-model="accountBarShowOrHide"; 		Hide "Login" when the user has logged in to account */
                     }
                 }).catch(function(err) {
                     console.log(err)
@@ -49,7 +50,8 @@ angular.module('RouteControllers', [])
                     $scope.token = results.data.token;
                     store.set('username', $scope.loginUser.username);
                     store.set('authToken', $scope.token);
-                    $location.path("/todo");
+                    $location.path("templates/recipes.html");
+					
                 }).catch(function(err) {
                     console.log(err);
                 });
@@ -59,4 +61,16 @@ angular.module('RouteControllers', [])
 	.controller('LogoutController', function(store) {
         store.remove('username');
         store.remove('authToken');
-    });
+    })
+	.controller('RecipesController', function() {
+		
+	})
+	.controller('HowToController', function() {
+		
+	})
+	.controller('VideoController', function() {
+		
+	})
+	.controller('ShopController', function() {
+		
+	})
