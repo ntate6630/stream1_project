@@ -3,12 +3,15 @@ body{
 
 }
 
-#accountAccessBar{
-		background: linear-gradient(90deg,
+.gradient{
+	background: linear-gradient(90deg,
 		rgba(255, 255, 255, 0) 0%,
 		rgba(255, 255, 255, 0.3) 15%,
 		rgba(255,255, 255, 0.3) 85%,
 		rgba(255, 255, 255, 0) 100%);
+}
+
+.accountAccessBar{
 	flex:1;
 	width:auto;
 	height:20px;
@@ -24,16 +27,20 @@ body{
 	color:White;
 }
 
-#pageHeader{
-		background: linear-gradient(90deg,
-		rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 0.3) 15%,
-		rgba(255,255, 255, 0.3) 85%,
-		rgba(255, 255, 255, 0) 100%);
+.pageHeader{
 	display:flex;
 	width:auto;
     height:100px;
     background-color:#421010;
+}
+
+.searchBar{
+	margin-top:50px;
+	margin-left:300px;
+	width:200px;
+	height:20px;
+	padding:5px 50px 5px 5px;
+	background-color:#FFC240;
 }
 
 img{
@@ -86,11 +93,25 @@ ng-view{
 	text-align:left;
 }
 
+.footerBar{
+	margin-top:700px;
+	padding-left:10px;
+	flex:1;
+	width:auto;
+	height:80px;
+	background-color:#421010;
+	font-size:10px;
+	font-family:'Roboto', sans-serif;
+	color:White;
+}
+
 @media screen and (max-width: 1000px){
-	#accountAccessBar{
+	.accountAccessBar{
 		flex:1;
+		width:auto;
 		text-align:right;
-		word-spacing:-10em;
+		padding:50;
+		/*word-spacing:-10em;*/			 /*Fixed- removed "word-spacing:-10em;" because chrome couldnt display the text "Login Logout Register" properly*/
 	}
 	
 	.accountAccess a{
@@ -117,15 +138,18 @@ ng-view{
 		font-size:18px;
 	}
 	
-	#pageHeader{
+	.pageHeader{
 		height:65px;
 	}
 }
 	
 @media screen and (max-width: 500px){
-	#accountAccessBar{
-		word-spacing:-10em;
+	.accountAccessBar{
+		flex:1;
+		width:auto;
+		/*word-spacing:-10em;*/        /*Fixed- removed "word-spacing:-10em;" because chrome couldnt display the text "Login Logout Register" properly*/ 
 		text-align:center;
+		padding:50;
 	}
 	
 	.accountAccess a{
@@ -140,19 +164,19 @@ ng-view{
 		width:200px;
 		height:50px;
 		position:absolute;
-		left:50;
+		left:20px;
 		top:29px;
 		z-index:-1
 	}
 	
 	#logo{
 		text-align:left;
-		margin-top:-15px;
+		margin-top:-5px;
 		margin-left:50px;
-		font-size:15px;
+		font-size:12px;
 	}
 	
-	#pageHeader{
+	.pageHeader{
 		height:50px;
 	}
 	
