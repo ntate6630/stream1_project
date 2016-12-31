@@ -1,9 +1,9 @@
-
 angular.module('cookingApp', ['ngRoute', 'angular-storage', 'RouteControllers', 'UserService']);
 
 angular.module('cookingApp').config(function($routeProvider) {
 
-	$routeProvider.when('/', {
+	$routeProvider
+	.when('/', {
 		templateUrl: 'templates/home.html',
 		controller: 'HomeController'
 	})
@@ -21,7 +21,7 @@ angular.module('cookingApp').config(function($routeProvider) {
 	})
 	.when('/recipes', {
 		templateUrl: 'templates/recipes.html',
-		controller: 'RecipesController',
+		controller: 'SearchBarController',
 	})
 	.when('/howTo', {
 		templateUrl: 'templates/howto.html',

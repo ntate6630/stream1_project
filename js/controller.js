@@ -13,7 +13,7 @@ angular.module('RouteControllers', [])
                 $scope.token = results.data.token;
                 store.set('username', $scope.registrationUser.username);
                 store.set('authToken', $scope.token);
-                $location.path("templates/recipes.html");
+                $location.path("templates/shop.html");
             }).catch(function(err) {
                 console.log(err.data);
             });
@@ -31,6 +31,7 @@ angular.module('RouteControllers', [])
                         
                         $scope.login();
 					/*	ng-model="accountBarShowOrHide"; 		Hide "Login" when the user has logged in to account */
+					/*  ng-model="accountBarShowOrHide";		Hide "Register" when the user has logged in to account */
                     }
                 }).catch(function(err) {
                     console.log(err)
@@ -50,7 +51,7 @@ angular.module('RouteControllers', [])
                     $scope.token = results.data.token;
                     store.set('username', $scope.loginUser.username);
                     store.set('authToken', $scope.token);
-                    $location.path("templates/recipes.html");
+                    $location.path("templates/shop.html");
 					
                 }).catch(function(err) {
                     console.log(err);
@@ -74,3 +75,33 @@ angular.module('RouteControllers', [])
 	.controller('ShopController', function() {
 		
 	})
+	.controller('SearchBarController', function($scope) {
+			$scope.recipes = function() {
+			var recipes = [
+				{type:"Fish", name:"Baked salmon", location:"url1"},
+				{type:"Dessert", name:"Apple pie", location:"url2"},
+				{type:"Soups", name:"Ministroni soup", location:"url3"},
+				{type:"Meat", name:"Roast beef", location:"url4"},
+				{type:"Dessert", name:"Custard tart", location:"url5"},
+				{type:"Dessert", name:"Mince pie", location:"url6"},
+				{type:"Meat", name:"Chicken curry", location:"url7"},
+				{type:"Pasta", name:"Spagetti bolognese", location:"url8"},
+				{type:"Seafood", name:"Prawn salad", location:"url9"},
+				{type:"Eggs", name:"Cheese and bacon quiche", location:"url10"},
+				{type:"Soups", name:"Carrot soup", location:"url11"},
+				{type:"Dessert", name:"Orange pancakes", location:"url12"},
+				{type:"Meat", name:"Shepards pie", location:"url13"},
+				{type:"Appetizer", name:"Cheese toasties", location:"url14"},
+				{type:"Dessert", name:"Chocolate icecream", location:"url15"},
+				{type:"Vegetarian", name:"Baked potato", location:"url16"},
+				{type:"Salads", name:"Vegetable	salad", location:"url17"},
+				{type:"baking", name:"Puff pastries", location:"url18"},
+				{type:"baking", name:"Shortbread biscuits", location:"url19"},
+				{type:"Eggs", name:"Cheese and onion omlette", location:"url20"}
+				];
+			$scope.recipes = recipes;
+			
+			console.log($scope.searchText)
+
+			};
+		});

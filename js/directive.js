@@ -1,6 +1,6 @@
-angular.module('ShopDirective',[]).directive('shopTable', function() {
+angular.module('RecipesDirective',[]).directive('Recipes', function() {
   return {
     restrict: 'EA',    // EA -> element/attribute
-    templateUrl: 'templates/directives/shopTable.html'
+    templateUrl: 'templates/directives/recipes-table.html'
   };
 });
