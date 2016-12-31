@@ -16,6 +16,7 @@
 </head>
 
 <body>
+	<a name="top"></a>
 	<div class="accountAccessBar gradient">
 		<div class="accountAccess">
 			<a href="#/accounts/logout">Logout</a>
@@ -28,9 +29,12 @@
 			<div id="logo">
 				<img src="/img/image1.png">
 				<h1>Cooking Guide</h1>
-			</div>
-			<div class="searchBar">
-				<input type="text" ng-model="search" /> {{item}}
+			</div >
+			<div ng-binding="recipes" class="searchBar">
+				<input type="text" ng-model="searchText" placeholder="Search recipes" />  
+				<!--<button type="submit" class="btn" ng-click="search()">Search</button>-->
+				<!--<button type="submit" class="btn btn-primary" ng-disabled="search.$invalid">Search</button>-->
+				<!--<button type="button" onclick="alert('Hello world!')">Search</button>-->
 			</div>
 		</div>
 	</div>
@@ -45,14 +49,32 @@
 	</nav>
 	
     <div ng-view>
- 
+		
     </div>
 	
 	<footer>
-		<div class="footerBar gradient">
-			<p>Stream 1 project</p>
-			<p>Cooking Guide designed by Nicholas Tate</p>
-			<p>This website for education and demonstration purposes only</p>
+		<div class="footerBar">
+			<div class="aboutTheSite">
+				<p>Stream 1 project</p>
+				<p>Cooking Guide designed by Nicholas Tate</p>
+				<p>This website for education and demonstration purposes only</p>
+			</div>
+			<div class="siteLinks">
+				<ul>
+					<li><a href="#/accounts/logout">Logout</a></li>
+					<li><a href="#/accounts/login">Login</a></li>
+					<li><a href="#/accounts/register">Register</a></li>
+					<li><a href="#/recipes">Recipes</a></li>
+					<li><a href="#/howTo">How To</a></li>
+					<li><a href="#/video">Video</a></li>
+					<li><a href="#/shop">Shop</a></li>
+				</ul>
+			</div>
+			<div class="siteLinks2">
+				<ul>
+					<li><a href="#">Back to top of page</a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 	
