@@ -49,6 +49,8 @@ a{
 	padding:5px 40px 11px 5px;
 	border-radius:5px;
 	background-color:#FFD250;
+	box-shadow: 2px 2px 5px #888888;
+
 }
 
 .searchBar button{
@@ -70,31 +72,80 @@ img{
 	z-index:-1;
 }
 
-.howToImages{   /* This is not working */
-	width:150px;
-	height:150px;
-	top:250px;
-	left:100px;
-}
 
-.recipes  .header{
-	background-color:#FFD250;
+.register .header{
+	background-color:#A0A0A0;/*#FFD250;*/
 	marging-left:50px;
 	padding-left:50px;
 	color:white;
+	text-shadow:2px 2px #000000;
+}
+.register .container{
+	background-color:white;
+	width:800px;
+	height:auto;
+	margin-left:250px;
+	padding:20px;
+}
+.login .header{
+	background-color:#A0A0A0;/*#FFD250;*/
+	marging-left:50px;
+	padding-left:50px;
+	color:white;
+	text-shadow:2px 2px #000000;
+}
+.login .container{
+	background-color:white;
+	width:800px;
+	height:auto;
+	margin-left:250px;
+	padding:20px;
+}
+.logout .header{
+	background-color:#A0A0A0;/*#FFD250;*/
+	marging-left:50px;
+	padding-left:50px;
+	color:white;
+	text-shadow:2px 2px #000000;
+}
+.logout .container{
+	background-color:white;
+	width:800px;
+	height:auto;
+	margin-left:250px;
+	padding:20px;
+}
+
+.howToImages img{  
+	z-index:100;
+	flex-direction:row;  
+    flex-wrap:wrap;
+	margin-top:400px;
+	margin-left:880px;
+	width:150px;
+	height:150px;
+}
+
+.recipes  .header{
+	background-color:#A0A0A0;/*#FFD250;*/
+	marging-left:50px;
+	padding-left:50px;
+	color:white;
+	text-shadow:2px 2px #000000;
 }
 .recipes table {
 	width: 500px;
 	margin-left:50px;
-    border-collapse:collapse;
+	border:0;
+    /*border-collapse:collapse;*/
 	font-size:22px;
 	color:white;
 }
 table tr:nth-child(even) {
-     background-color:#B07070;
+     background-color:#400010;
 }
 table  tr:nth-child(odd) {
-     background-color:#C07070;
+     background-color:#401010;
 }
 td {
     border: 1px solid black;
@@ -102,24 +153,57 @@ td {
 }
 
 .howTo  .header{
-	background-color:#FFD250;
+	background-color:#A0A0A0;
 	marging-left:50px;
 	padding-left:50px;
 	color:white;
+	text-shadow:2px 2px #000000;
+}
+.howTo .content{
+	background-color:white;
+	width:800px;
+	height:auto;
+	margin-left:250px;
+	padding:20px;
 }
 
+
 .videos .header{
-	background-color:#FFD250;
+	background-color:#A0A0A0;
 	marging-left:50px;
 	padding-left:50px;
 	color:white;
+	text-shadow:2px 2px #000000;
 }
 
 .shop .header{
-	background-color:#FFD250;
+	background-color:#A0A0A0;
 	marging-left:50px;
 	padding-left:50px;
 	color:white;
+	text-shadow:2px 2px #000000;
+}
+.shop .content{
+	background-color:white;
+	width:800px;
+	height:400px;
+	margin-left:250px;
+	padding:20px;
+}
+
+.home .header{
+	background-color:#A0A0A0;
+	marging-left:50px;
+	padding-left:50px;
+	color:white;
+	text-shadow:2px 2px #000000;
+}
+.home .content{
+	background-color:white;
+	width:800px;
+	height:400px;
+	margin-left:250px;
+	padding:20px;
 }
 
 #logo{
@@ -130,7 +214,9 @@ td {
 	font-size:35px;
 	font-family: 'Pinyon Script', cursive;
 	color:White;
-}
+    text-shadow:2px 2px #000000;
+} 
+
 
 .flex-navbar{
 	display:flex;
@@ -141,11 +227,12 @@ td {
 }
 
 .button:hover {
-	background-color:Brown;
+	background-color:#800010;
 }
 
 .button {
-    background-color:#C07070;
+    background-color:Brown;
+	border-radius:5px;
     width:100px;
     height:25px;
     margin:2px;
@@ -153,6 +240,7 @@ td {
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
 	text-align:center;
+	box-shadow: 2px 2px 5px #888888;
 }
 
 .footerBar{
@@ -162,7 +250,7 @@ td {
 	padding-left:20px;
 	width:auto;
 	height:120px;
-	background-color:#C07070;
+	background-color:#400010;
 	font-size:12px;
 	font-family:'Roboto', sans-serif;
 	color:White;
@@ -308,6 +396,7 @@ td {
 	
 	.footerBar{
 		font-size:10px;
+		padding:5px;
 	}
 	
 	.videos iframe{
