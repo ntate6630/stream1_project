@@ -97,7 +97,9 @@ angular.module('RouteControllers', [])
 				{type:"Salads", name:"Vegetable	salad", location:"url17"},
 				{type:"baking", name:"Puff pastries", location:"url18"},
 				{type:"baking", name:"Shortbread biscuits", location:"url19"},
-				{type:"Eggs", name:"Cheese and onion omlette", location:"url20"}
+				{type:"Eggs", name:"Cheese and onion omlette", location:"url20"},
+				{type:"Meat", name:"Chicken kebabs", location:"url21"},
+				{type:"Dessert", name:"Cheese cake", location:"url22"}
 				];
 			$scope.recipes = recipes;
 			
