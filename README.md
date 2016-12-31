@@ -4,7 +4,7 @@
 
 ### What is this app for?
 
-This is a cooking website to demonstrate usage of different learnt on the course.
+This is a cooking website to demonstrate usage of different technologies learnt on the course.
 
 ### What does it do?
 
@@ -33,24 +33,24 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 	- Registration.
 	- Login.
 	- Logout.
-	- Search box.
+	- Search box to be able to search a database of recipes.
 	- Forms for user to sign up.
 	- forms for adding user account details to be able to buy items once registered and signed in.
 	- Newsletter Email signup.
 	- Content for the body section of the web pages.
 	- Shopping basket.
-	- all the AngularJS code to make the site work.
+	- All the AngularJS code to make the site work.
 
 ## Tech Used
 
 ### Some of the tech used includes:
 - [AngularJS](https://angularjs.org/)
 	- I use **AngularJS** to handle page routing, I also use it to make calls to the REST API and build custom directives.
-	- AngularJS is used to create the search box function and to change the content in the body of the web page.
+	- AngularJS is used to create the search box function for the recipe database and to dynamically route the partial HTML files in to the view of the content area of the web page.
 - [npm](https://www.npmjs.com/)
-	- **npm** to help manage some of the dependencies in our application
+	- **npm** to help manage some of the dependencies in the application
 - [bower](https://bower.io/)
-	- **Bower** is used to manage the installation of our libraries and frameworks
+	- **Bower** is used to manage the installation of the libraries and frameworks
  
 ## Contributing
 
