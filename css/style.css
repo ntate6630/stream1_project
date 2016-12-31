@@ -1,13 +1,19 @@
 
 body{
+	background-color:#700000;
 
 }
 
-.gradient{
+a{
+	text-decoration: none;
+	color:white;
+}
+
+.gradient{			
 	background: linear-gradient(90deg,
-		rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 0.3) 15%,
-		rgba(255,255, 255, 0.3) 85%,
+		rgba(255, 255, 255, 0) 30%,
+		rgba(255, 255, 255, 0.5) 40%,
+		rgba(255,255, 255, 0.5) 53%,
 		rgba(255, 255, 255, 0) 100%);
 }
 
@@ -17,12 +23,12 @@ body{
 	height:20px;
 	text-align:right;
 	word-spacing:1em;
-	background-color:#421010;
+	background-color:#D0F040;
 }
 
 .accountAccess a{
 	margin-right:10px;
-	font-size:15px;
+	font-size:17px;
 	font-family:'Roboto', sans-serif;
 	color:White;
 }
@@ -31,26 +37,89 @@ body{
 	display:flex;
 	width:auto;
     height:100px;
-    background-color:#421010;
+    background-color:#D0F040;
 }
 
 .searchBar{
+	flex-direction:row;
 	margin-top:50px;
-	margin-left:300px;
+	margin-left:20%;
 	width:200px;
 	height:20px;
-	padding:5px 50px 5px 5px;
-	background-color:#FFC240;
+	padding:5px 40px 11px 5px;
+	border-radius:5px;
+	background-color:#FFD250;
+}
+
+.searchBar button{
+	/*margin-top:-20px;*/
+	/*margin-left:20%;*/
+}
+
+input{
+	height:22px;
 }
 
 img{
-	opacity:0.5;
+	opacity:0.8;
 	width:500px;
 	height:100px;
 	position:absolute;
 	left:50px;
 	top:29px;
 	z-index:-1;
+}
+
+.howToImages{   /* This is not working */
+	width:150px;
+	height:150px;
+	top:250px;
+	left:100px;
+}
+
+.recipes  .header{
+	background-color:#FFD250;
+	marging-left:50px;
+	padding-left:50px;
+	color:white;
+}
+.recipes table {
+	width: 500px;
+	margin-left:50px;
+    border-collapse:collapse;
+	font-size:22px;
+	color:white;
+}
+table tr:nth-child(even) {
+     background-color:#B07070;
+}
+table  tr:nth-child(odd) {
+     background-color:#C07070;
+}
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.howTo  .header{
+	background-color:#FFD250;
+	marging-left:50px;
+	padding-left:50px;
+	color:white;
+}
+
+.videos .header{
+	background-color:#FFD250;
+	marging-left:50px;
+	padding-left:50px;
+	color:white;
+}
+
+.shop .header{
+	background-color:#FFD250;
+	marging-left:50px;
+	padding-left:50px;
+	color:white;
 }
 
 #logo{
@@ -76,7 +145,7 @@ img{
 }
 
 .button {
-    background-color:#FFC240;
+    background-color:#C07070;
     width:100px;
     height:25px;
     margin:2px;
@@ -86,23 +155,27 @@ img{
 	text-align:center;
 }
 
-ng-view{
-	font-size:20px;
-	font-family:'Roboto', sans-serif;
-	color:Black;
-	text-align:left;
-}
-
 .footerBar{
-	margin-top:700px;
-	padding-left:10px;
-	flex:1;
+	display:flex;
+    flex-direction:row;
+	margin-top:500px;
+	padding-left:20px;
 	width:auto;
-	height:80px;
-	background-color:#421010;
-	font-size:10px;
+	height:120px;
+	background-color:#C07070;
+	font-size:12px;
 	font-family:'Roboto', sans-serif;
 	color:White;
+}
+
+.videos iframe{
+	display:flex;
+    flex-direction:column;
+	top:150px;
+	margin-left:300px;
+	width:640px;
+	height:480px;
+	margin-bottom:100px;
 }
 
 @media screen and (max-width: 1000px){
@@ -118,29 +191,59 @@ ng-view{
 		margin-right:10px;
 		font-size:13px;
 		font-family:'Roboto', sans-serif;
-		color:White;
 	}
 	
 	img{
-		opacity:0.5;
-		width:250px;
-		height:50px;
 		position:absolute;
-		left:50px;
-		top:35px;
+		width:200px;
+		height:50px;
+		margin-left:-50px;
+		margin-top:-5px;
 		z-index:-1
 	}
 	
 	#logo{
+		position:absolute;
 		text-align:left;
 		margin-top:-15px;
-		margin-left:50px;
+		margin-left:35px;
 		font-size:18px;
 	}
 	
 	.pageHeader{
-		height:65px;
+		height:80px;
 	}
+
+	.searchBar{
+		margin-top:50px;
+		margin-left:50%;
+		width:180px;
+		height:20px;
+		padding:3px 50px 5px 3px;
+		border-radius:5px;
+	}
+	
+	input{
+		height:18px;
+	}
+	
+.recipes table {
+	width: auto;
+	margin-left:50px;
+    border-collapse:collapse;
+	font-size:14px;
+	color:white;
+}
+
+	.videos iframe{
+	display:flex;
+    flex-direction:column;
+	top:150px;
+	margin-left:50px;
+	width:640px;
+	height:480px;
+	margin-bottom:100px;
+}
 }
 	
 @media screen and (max-width: 500px){
@@ -156,16 +259,14 @@ ng-view{
 		margin-right:20px;
 		font-size:10px;
 		font-family:'Roboto', sans-serif;
-		color:White;
 	}
 	
 	img{
-		opacity:0.5;ttp
-		width:200px;
+		width:150px;
 		height:50px;
 		position:absolute;
-		left:20px;
-		top:29px;
+		margin-left:-50px;
+		margin-top:-25px;
 		z-index:-1
 	}
 	
@@ -185,4 +286,37 @@ ng-view{
 		width:67px;
 		font-size:10px;
 	}
+	.searchBar{
+		margin-top:75px;
+		margin-left:73px;
+		width:150px;
+		height:20px;
+		padding:2px 57px 2px 2px;
+		border-radius:2px;
+	}
+	input{
+		height:16px;
+	}
+	
+.recipes table {
+	width: auto;
+	margin-left:0px;
+    border-collapse:collapse;
+	font-size:12px;
+	color:white;
+}
+	
+	.footerBar{
+		font-size:10px;
+	}
+	
+	.videos iframe{
+	display:flex;
+    flex-direction:column;
+	top:150px;
+	margin-left:0px;
+	width:auto;
+	height:240px;
+	margin-bottom:50px;
+}
 }
