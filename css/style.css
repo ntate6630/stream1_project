@@ -25,21 +25,18 @@ a{
 	word-spacing:1em;
 	background-color:#D0F040;
 }
-
 .accountAccess a{
 	margin-right:10px;
 	font-size:17px;
 	font-family:'Roboto', sans-serif;
 	color:White;
 }
-
 .pageHeader{
 	display:flex;
 	width:auto;
     height:100px;
     background-color:#D0F040;
 }
-
 .searchBar{
 	flex-direction:row;
 	margin-top:50px;
@@ -52,16 +49,23 @@ a{
 	box-shadow: 2px 2px 5px #888888;
 
 }
-
 .searchBar button{
 	/*margin-top:-20px;*/
 	/*margin-left:20%;*/
 }
-
 input{
 	height:22px;
 }
-
+#logo{
+	z-index:1;
+	margin-left:50px;
+	margin-top:-45px;
+	text-align:left;
+	font-size:35px;
+	font-family: 'Pinyon Script', cursive;
+	color:White;
+    text-shadow:2px 2px #000000;
+} 
 img{
 	opacity:0.8;
 	width:500px;
@@ -71,8 +75,28 @@ img{
 	top:29px;
 	z-index:-1;
 }
-
-
+.flex-navbar{
+	display:flex;
+	flex-flow:row wrap;
+  	width:auto;
+    height: 34px;
+    background-color:White;
+}
+.button:hover {
+	background-color:#800010;
+}
+.button {
+    background-color:Brown;
+	border-radius:5px;
+    width:100px;
+    height:25px;
+    margin:2px;
+	color:#FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	text-align:center;
+	box-shadow: 2px 2px 5px #888888;
+}
 .register .header{
 	background-color:#A0A0A0;/*#FFD250;*/
 	marging-left:50px;
@@ -82,10 +106,12 @@ img{
 }
 .register .container{
 	background-color:white;
-	width:800px;
-	height:auto;
-	margin-left:250px;
-	padding:20px;
+	/*width:800px;*/
+	height:400px;
+	margin-left:150px;
+	margin-right:150px;
+	padding-top:20px;
+	padding-left:200px;
 }
 .login .header{
 	background-color:#A0A0A0;/*#FFD250;*/
@@ -96,10 +122,11 @@ img{
 }
 .login .container{
 	background-color:white;
-	width:800px;
-	height:auto;
-	margin-left:250px;
-	padding:20px;
+	height:400px;
+	margin-left:150px;
+	margin-right:150px;
+	padding-top:20px;
+	padding-left:200px;
 }
 .logout .header{
 	background-color:#A0A0A0;/*#FFD250;*/
@@ -110,22 +137,27 @@ img{
 }
 .logout .container{
 	background-color:white;
-	width:800px;
-	height:auto;
-	margin-left:250px;
-	padding:20px;
+	height:400px;;
+	margin-left:150px;
+	margin-right:150px;
+	padding-top:20px;
+	padding-left:200px;
 }
-
-.howToImages img{  
-	z-index:100;
-	flex-direction:row;  
-    flex-wrap:wrap;
-	margin-top:400px;
-	margin-left:880px;
-	width:150px;
-	height:150px;
+.home .header{
+	background-color:#A0A0A0;
+	marging-left:50px;
+	padding-left:50px;
+	color:white;
+	text-shadow:2px 2px #000000;
 }
-
+.home .content{
+	background-color:white;
+	height:400px;
+	margin-left:150px;
+	margin-right:150px;
+	padding-top:20px;
+	padding-left:200px;
+}
 .recipes  .header{
 	background-color:#A0A0A0;/*#FFD250;*/
 	marging-left:50px;
@@ -142,7 +174,7 @@ img{
 	color:white;
 }
 table tr:nth-child(even) {
-     background-color:#400010;
+     background-color:#370010;
 }
 table  tr:nth-child(odd) {
      background-color:#401010;
@@ -151,7 +183,6 @@ td {
     border: 1px solid black;
     padding: 5px;
 }
-
 .howTo  .header{
 	background-color:#A0A0A0;
 	marging-left:50px;
@@ -161,13 +192,21 @@ td {
 }
 .howTo .content{
 	background-color:white;
-	width:800px;
 	height:auto;
-	margin-left:250px;
-	padding:20px;
+	margin-left:150px;
+	margin-right:150px;
+	padding-top:20px;
+	padding-left:200px;
 }
-
-
+.howToImages img{  
+	z-index:100;
+	flex-direction:row;  
+    flex-wrap:wrap;
+	margin-top:400px;
+	margin-left:880px;
+	width:150px;
+	height:150px;
+}
 .videos .header{
 	background-color:#A0A0A0;
 	marging-left:50px;
@@ -175,7 +214,15 @@ td {
 	color:white;
 	text-shadow:2px 2px #000000;
 }
-
+.videos iframe{
+	display:flex;
+    flex-direction:column;
+	top:150px;
+	margin-left:400px;
+	width:640px;
+	height:480px;
+	margin-bottom:100px;
+}
 .shop .header{
 	background-color:#A0A0A0;
 	marging-left:50px;
@@ -185,67 +232,16 @@ td {
 }
 .shop .content{
 	background-color:white;
-	width:800px;
-	height:400px;
-	margin-left:250px;
-	padding:20px;
+	height:800px;
+	margin-left:150px;
+	margin-right:150px;
+	padding-top:20px;
+	padding-left:200px;
 }
-
-.home .header{
-	background-color:#A0A0A0;
-	marging-left:50px;
-	padding-left:50px;
-	color:white;
-	text-shadow:2px 2px #000000;
-}
-.home .content{
-	background-color:white;
-	width:800px;
-	height:400px;
-	margin-left:250px;
-	padding:20px;
-}
-
-#logo{
-	z-index:1;
-	margin-left:50px;
-	margin-top:-45px;
-	text-align:left;
-	font-size:35px;
-	font-family: 'Pinyon Script', cursive;
-	color:White;
-    text-shadow:2px 2px #000000;
-} 
-
-.flex-navbar{
-	display:flex;
-	flex-flow:row wrap;
-  	width:auto;
-    height: 34px;
-    background-color:White;
-}
-
-.button:hover {
-	background-color:#800010;
-}
-
-.button {
-    background-color:Brown;
-	border-radius:5px;
-    width:100px;
-    height:25px;
-    margin:2px;
-	color:#FFFFFF;
-	font-family: 'Roboto', sans-serif;
-	font-size:16px;
-	text-align:center;
-	box-shadow: 2px 2px 5px #888888;
-}
-
 .footerBar{
 	display:flex;
     flex-direction:row;
-	margin-top:500px;
+	margin-top:20px;
 	padding-left:20px;
 	width:auto;
 	height:120px;
@@ -255,15 +251,6 @@ td {
 	color:White;
 }
 
-.videos iframe{
-	display:flex;
-    flex-direction:column;
-	top:150px;
-	margin-left:300px;
-	width:640px;
-	height:480px;
-	margin-bottom:100px;
-}
 
 @media screen and (max-width: 1000px){
 	.accountAccessBar{
@@ -320,7 +307,7 @@ td {
     border-collapse:collapse;
 	font-size:14px;
 	color:white;
-}
+	}
 
 	.videos iframe{
 	display:flex;
@@ -330,10 +317,17 @@ td {
 	width:640px;
 	height:480px;
 	margin-bottom:100px;
-}
+	}
+	.container .content{
+	height:800px;
+	margin-left:50px;
+	margin-right:50px;
+	padding-top:20px;
+	padding-left:40px;
+	}
 }
 	
-@media screen and (max-width: 500px){
+@media screen and (max-width: 570px){
 	.accountAccessBar{
 		flex:1;
 		width:auto;
@@ -385,13 +379,13 @@ td {
 		height:16px;
 	}
 	
-.recipes table {
+	.recipes table {
 	width: auto;
 	margin-left:0px;
     border-collapse:collapse;
 	font-size:12px;
 	color:white;
-}
+	}
 	
 	.footerBar{
 		font-size:10px;
@@ -406,5 +400,19 @@ td {
 	width:auto;
 	height:240px;
 	margin-bottom:50px;
-}
+	}
+	
+	.container .content{
+	height:800px;
+	margin-left:1px;
+	margin-right:1px;
+	padding-top:20px;
+	padding-left:5px;
+	}
+	.container .header{
+	margin-top:20px;
+	padding-left:10px;
+	font-size:10px;
+	text-shadow:1px 1px #000000;
+	}
 }
