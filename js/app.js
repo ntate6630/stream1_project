@@ -1,4 +1,4 @@
-angular.module('cookingApp', ['ngRoute', 'angular-storage', 'RouteControllers', 'UserService']);
+angular.module('cookingApp', ['ngRoute', 'angular-storage', 'RouteControllers', 'UserService', 'UserStatusDirective']);
 
 angular.module('cookingApp').config(function($routeProvider) {
 

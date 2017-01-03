@@ -1,6 +1,6 @@
-angular.module('RecipesDirective',[]).directive('Recipes', function() {
+angular.module('UserStatusDirective',[]).directive('userStatus', function() {
   return {
     restrict: 'EA',    // EA -> element/attribute
-    templateUrl: 'templates/directives/recipes-table.html'
+    templateUrl: 'templates/directives/user-status.html'
   };
 });

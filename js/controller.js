@@ -1,7 +1,8 @@
 angular.module('RouteControllers', [])
 
 	.controller('HomeController', function($scope) {
-        $scope.title = "Home";
+        
+			
     })
     .controller('RegisterController', function($scope, $location, UserAPIService, store) {
 
@@ -13,7 +14,8 @@ angular.module('RouteControllers', [])
                 $scope.token = results.data.token;
                 store.set('username', $scope.registrationUser.username);
                 store.set('authToken', $scope.token);
-                $location.path("templates/shop.html");
+				
+                $location.path("templates/home.html");
             }).catch(function(err) {
                 console.log(err.data);
             });
@@ -30,8 +32,9 @@ angular.module('RouteControllers', [])
                         && $scope.data.password == $scope.registrationUser.password) {
                         
                         $scope.login();
-					/*	ng-model="accountBarShowOrHide"; 		Hide "Login" when the user has logged in to account */
-					/*  ng-model="accountBarShowOrHide";		Hide "Register" when the user has logged in to account */
+						$location.path("templates/home.html")
+					/*	ng-model="accountBarShowOrHide"; 		Hide "Login" in the "Account access bar" when the user has logged in to account */
+					/*  ng-model="accountBarShowOrHide";		Hide "Register" in the "Account access bar" when the user has logged in to account */
                     }
                 }).catch(function(err) {
                     console.log(err)
@@ -51,7 +54,7 @@ angular.module('RouteControllers', [])
                     $scope.token = results.data.token;
                     store.set('username', $scope.loginUser.username);
                     store.set('authToken', $scope.token);
-                    $location.path("templates/shop.html");
+                    $location.path("templates/home.html");
 					
                 }).catch(function(err) {
                     console.log(err);
@@ -63,15 +66,6 @@ angular.module('RouteControllers', [])
         store.remove('username');
         store.remove('authToken');
     })
-	.controller('RecipesController', function() {
-		
-	})
-	.controller('HowToController', function() {
-		
-	})
-	.controller('VideoController', function() {
-		
-	})
 	.controller('ShopController', function() {
 		
 	})
