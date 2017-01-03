@@ -24,8 +24,11 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 ### Existing Features
 - Header
 - Login, Logout, Register links added.
+- Forms for user to sign up.
+- forms for adding user account details to be able to buy items once registered and signed in.
 - Attractive looking font from google fonts used for the main logo and custom made images.
 - Nav bar with button links that change colour with mouse hover over them.
+- Active Search box to be able to search a database of recipes.
 - Responsive web design changes the layout when viewed on either mobile, tablet or full size desktop screens.
 
 ### Features Left to Implement
@@ -33,9 +36,6 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 	- Registration.
 	- Login.
 	- Logout.
-	- Search box to be able to search a database of recipes.
-	- Forms for user to sign up.
-	- forms for adding user account details to be able to buy items once registered and signed in.
 	- Newsletter Email signup.
 	- Content for the body section of the web pages.
 	- Shopping basket.
