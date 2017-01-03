@@ -1,22 +1,19 @@
 
 body{
-	background-color:#700000;
+	background-color:#700000;  /* Set main background color to brown. */
 
 }
-
 a{
-	text-decoration: none;
+	text-decoration: none;	/* Remove underscore from clickable links (looks much nicer!) */
 	color:white;
 }
-
 .gradient{			
-	background: linear-gradient(90deg,
+	background: linear-gradient(90deg,  /* Apply linear gradient to Account access bar, Header, NAV bar, and Title bar */
 		rgba(255, 255, 255, 0) 30%,
 		rgba(255, 255, 255, 0.5) 40%,
 		rgba(255,255, 255, 0.5) 53%,
 		rgba(255, 255, 255, 0) 100%);
 }
-
 .accountAccessBar{
 	flex:1;
 	width:auto;
@@ -29,7 +26,7 @@ a{
 	margin-right:10px;
 	font-size:17px;
 	font-family:'Roboto', sans-serif;
-	color:White;
+	color:Blue;
 }
 .pageHeader{
 	display:flex;
@@ -47,11 +44,6 @@ a{
 	border-radius:5px;
 	background-color:#FFD250;
 	box-shadow: 2px 2px 5px #888888;
-
-}
-.searchBar button{
-	/*margin-top:-20px;*/
-	/*margin-left:20%;*/
 }
 input{
 	height:22px;
@@ -106,7 +98,6 @@ img{
 }
 .register .container{
 	background-color:white;
-	/*width:800px;*/
 	height:400px;
 	margin-left:150px;
 	margin-right:150px;
@@ -260,13 +251,11 @@ td {
 		padding:50;
 		/*word-spacing:-10em;*/			 /*Fixed- removed "word-spacing:-10em;" because chrome couldnt display the text "Login Logout Register" properly*/
 	}
-	
 	.accountAccess a{
 		margin-right:10px;
 		font-size:13px;
 		font-family:'Roboto', sans-serif;
 	}
-	
 	img{
 		position:absolute;
 		width:200px;
@@ -275,7 +264,6 @@ td {
 		margin-top:-5px;
 		z-index:-1
 	}
-	
 	#logo{
 		position:absolute;
 		text-align:left;
@@ -283,11 +271,9 @@ td {
 		margin-left:35px;
 		font-size:18px;
 	}
-	
 	.pageHeader{
 		height:80px;
 	}
-
 	.searchBar{
 		margin-top:50px;
 		margin-left:50%;
@@ -296,11 +282,9 @@ td {
 		padding:3px 50px 5px 3px;
 		border-radius:5px;
 	}
-	
 	input{
 		height:18px;
 	}
-	
 .recipes table {
 	width: auto;
 	margin-left:50px;
@@ -308,7 +292,6 @@ td {
 	font-size:14px;
 	color:white;
 	}
-
 	.videos iframe{
 	display:flex;
     flex-direction:column;
@@ -335,13 +318,11 @@ td {
 		text-align:center;
 		padding:50;
 	}
-	
 	.accountAccess a{
 		margin-right:20px;
 		font-size:10px;
 		font-family:'Roboto', sans-serif;
 	}
-	
 	img{
 		width:150px;
 		height:50px;
@@ -350,18 +331,15 @@ td {
 		margin-top:-25px;
 		z-index:-1
 	}
-	
 	#logo{
 		text-align:left;
 		margin-top:-5px;
 		margin-left:50px;
 		font-size:12px;
 	}
-	
 	.pageHeader{
 		height:50px;
 	}
-	
 	.button{
 		height:21px;
 		width:67px;
@@ -378,7 +356,6 @@ td {
 	input{
 		height:16px;
 	}
-	
 	.recipes table {
 	width: auto;
 	margin-left:0px;
@@ -386,12 +363,10 @@ td {
 	font-size:12px;
 	color:white;
 	}
-	
 	.footerBar{
 		font-size:10px;
 		padding:5px;
 	}
-	
 	.videos iframe{
 	display:flex;
     flex-direction:column;
@@ -401,7 +376,6 @@ td {
 	height:240px;
 	margin-bottom:50px;
 	}
-	
 	.container .content{
 	height:800px;
 	margin-left:1px;
