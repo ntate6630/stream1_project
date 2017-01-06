@@ -1,8 +1,7 @@
 angular.module('RouteControllers', [])
 
 	.controller('HomeController', function($scope) {
-        
-			
+        $scope.title = "Home";
     })
     .controller('RegisterController', function($scope, $location, UserAPIService, store) {
 
@@ -33,8 +32,6 @@ angular.module('RouteControllers', [])
                         
                         $scope.login();
 						$location.path("templates/home.html")
-					/*	ng-model="accountBarShowOrHide"; 		Hide "Login" in the "Account access bar" when the user has logged in to account */
-					/*  ng-model="accountBarShowOrHide";		Hide "Register" in the "Account access bar" when the user has logged in to account */
                     }
                 }).catch(function(err) {
                     console.log(err)
@@ -54,7 +51,7 @@ angular.module('RouteControllers', [])
                     $scope.token = results.data.token;
                     store.set('username', $scope.loginUser.username);
                     store.set('authToken', $scope.token);
-                    $location.path("templates/home.html");
+                    $location.path("/home.html");
 					
                 }).catch(function(err) {
                     console.log(err);
@@ -66,38 +63,43 @@ angular.module('RouteControllers', [])
         store.remove('username');
         store.remove('authToken');
     })
-	.controller('ShopController', function() {
-		
-	})
 	.controller('SearchBarController', function($scope) {
 			$scope.recipes = function() {
 			var recipes = [
-				{type:"Fish", name:"Baked salmon", location:"url1"},
-				{type:"Dessert", name:"Apple pie", location:"url2"},
-				{type:"Soups", name:"Ministroni soup", location:"url3"},
-				{type:"Meat", name:"Roast beef", location:"url4"},
-				{type:"Dessert", name:"Custard tart", location:"url5"},
-				{type:"Dessert", name:"Mince pie", location:"url6"},
-				{type:"Meat", name:"Chicken curry", location:"url7"},
-				{type:"Pasta", name:"Spagetti bolognese", location:"url8"},
-				{type:"Seafood", name:"Prawn salad", location:"url9"},
-				{type:"Eggs", name:"Cheese and bacon quiche", location:"url10"},
-				{type:"Soups", name:"Carrot soup", location:"url11"},
-				{type:"Dessert", name:"Orange pancakes", location:"url12"},
-				{type:"Meat", name:"Shepards pie", location:"url13"},
-				{type:"Appetizer", name:"Cheese toasties", location:"url14"},
-				{type:"Dessert", name:"Chocolate icecream", location:"url15"},
-				{type:"Vegetarian", name:"Baked potato", location:"url16"},
-				{type:"Salads", name:"Vegetable	salad", location:"url17"},
-				{type:"baking", name:"Puff pastries", location:"url18"},
-				{type:"baking", name:"Shortbread biscuits", location:"url19"},
-				{type:"Eggs", name:"Cheese and onion omlette", location:"url20"},
-				{type:"Meat", name:"Chicken kebabs", location:"url21"},
-				{type:"Dessert", name:"Cheese cake", location:"url22"}
+				{type:"Fish", name:"Baked salmon", location:"baked_salmon_with_herbs",image:"baked_salmon_with_herbs.jpg"},
+				{type:"Dessert", name:"Apple pie", location:"apple_pie",image:"applepie.jpg"},
+				{type:"Soups", name:"Minestrone soup", location:"minestrone_soup",image:"minestrone_soup.jpg"},
+				{type:"Meat", name:"Roast beef", location:"roast_beef",image:"roast_beef.jpg"},
+				{type:"Dessert", name:"Custard tart", location:"custard_tart",image:"custard_tart.jpg"},
+				{type:"Dessert", name:"Mince pie", location:"mince_pie",image:"mince_pie.jpg"},
+				{type:"Meat", name:"Chicken curry", location:"chicken_curry",image:"chicken_curry.jpg"},
+				{type:"Pasta", name:"Spagetti bolognese", location:"spagetti_bolgnese",image:"spagetti_bolognese.jpg"},
+				{type:"Seafood", name:"Prawn salad", location:"prawn_salad",image:"prawn_salad.jpg"},
+				{type:"Eggs", name:"Cheese and bacon quiche", location:"cheese_and_bacon_quiche",image:"cheese_and_bacon_quiche.jpg"},
+				{type:"Soups", name:"Carrot soup", location:"carrot_soup",image:"carrot_soup.jpg"},
+				{type:"Dessert", name:"Orange pancakes", location:"orange_pancakes",image:"orange_pancakes.jpg"},
+				{type:"Meat", name:"Shepards pie", location:"shepards_pie",image:"shepards_pie.jpg"},
+				{type:"Appetizer", name:"Cheese toasties", location:"cheese_toasties",image:"cheese_toasties.jpg"},
+				{type:"Dessert", name:"Chocolate icecream", location:"chocolate_icecream",image:"chocolate_icecream.jpg"},
+				{type:"Vegetarian", name:"Baked potato", location:"baked_potato",image:"baked_potato.jpg"},
+				{type:"Salads", name:"Vegetable	salad", location:"vegetable_salad",image:"vegetable_salad.jpg"},
+				{type:"baking", name:"Puff pastries", location:"puff_pastries",image:"puff_pastries.jpg"},
+				{type:"baking", name:"Shortbread biscuits", location:"shortbread_biscuits",image:"shortbread_biscuits.jpg"},
+				{type:"Eggs", name:"Cheese and onion omlette", location:"omelette",image:"omelette.jpg"},
+				{type:"Meat", name:"Chicken kebabs", location:"chicken_kebab",image:"chicken_kebab.jpg"},
+				{type:"Dessert", name:"Cheese cake", location:"cheese_cake",image:"cheese_cake.jpg"}
 				];
 			$scope.recipes = recipes;
+			}
+	})
+	/*.controller('HowToController', function($scope) {
 			
-			console.log($scope.searchText)
+	}
+	.controller('VideoController', function($scope) {
+			
+	}
+	.controller('ShopController', function($scope) {
+			
+	})*/
+//});
 
-			};
-		});
