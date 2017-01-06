@@ -10,7 +10,7 @@
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
 	<link rel="stylesheet" type="text/css"href="css/style.css">
 </head>
@@ -36,6 +36,9 @@
 				<!--<button type="submit" class="btn btn-primary" ng-disabled="search.$invalid">Search</button>-->
 				<!--<button type="button" onclick="alert('Hello world!')">Search</button>-->
 			</div>
+			<div class="magnifying_glass">
+				<img src="/img/magnifying_glass.png">
+			</div>
 		</div>
 	</div>
 	</header>
@@ -44,13 +47,13 @@
 			<!--<div class="button"><a href="#/">Home</a></div>-->
 			<div class="button" onclick="window.location.href='/#'"><a href="#/">Home</a></div>  <!-- Fixed - This makes the full area of the button a clickable link -->
 			<!--<div class="button"><a href="#/recipes">Recipes</a></div>-->
-			<div class="button" onclick="window.location.href='/#/recipes'"><a href="#/">Recipes</a></div>
+			<div class="button" onclick="window.location.href='/#/recipes'"><a href="#/recipes">Recipes</a></div>
 			<!--<div class="button"><a href="#/howTo">How To</a></div>-->
-			<div class="button" onclick="window.location.href='/#/howTo'"><a href="#/">How To</a></div>
+			<div class="button" onclick="window.location.href='/#/howTo'"><a href="#/howTo">How To</a></div>
 			<!--<div class="button"><a href="#/video">Video</a></div>-->
-			<div class="button" onclick="window.location.href='/#/video'"><a href="#/">Video</a></div>
+			<div class="button" onclick="window.location.href='/#/video'"><a href="#/video">Video</a></div>
 			<!--<div class="button"><a href="#/shop">Shop</a></div>-->
-			<div class="button" onclick="window.location.href='/#/shop'"><a href="#/">Shop</a></div>
+			<div class="button" onclick="window.location.href='/#/shop'"><a href="#/shop">Shop</a></div>
 		</div>
 	</nav>
 	
@@ -81,7 +84,7 @@
 			<div class="siteLinks2">
 				<ul>
 					<li><a href="#/shop">Shop</a></li>
-					<li><a href="/#">Back to top of page</a></li>
+					<li><a href="/#/">Back to top of page</a></li>
 				</ul>
 			</div>
 		</div>
