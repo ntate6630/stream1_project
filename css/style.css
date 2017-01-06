@@ -38,12 +38,19 @@ a{
 	flex-direction:row;
 	margin-top:50px;
 	margin-left:20%;
-	width:200px;
+	width:180px;   /* make changes for the other screen sizes too */
 	height:20px;
 	padding:5px 40px 11px 5px;
 	border-radius:5px;
 	background-color:#FFD250;
 	box-shadow: 2px 2px 5px #888888;
+}
+.pageHeader .magnifying_glass img {
+	z-index:1;
+	margin-top:54px;
+	margin-left:-45px; 
+	width:27px;
+	height:27px;
 }
 input{
 	height:22px;
@@ -58,7 +65,7 @@ input{
 	color:White;
     text-shadow:2px 2px #000000;
 } 
-img{
+.pageHeader #logo img{
 	opacity:0.8;
 	width:500px;
 	height:100px;
@@ -150,17 +157,16 @@ img{
 	padding-left:200px;
 }
 .recipes  .header{
-	background-color:#A0A0A0;/*#FFD250;*/
+	background-color:#A0A0A0;
 	marging-left:50px;
 	padding-left:50px;
 	color:white;
 	text-shadow:2px 2px #000000;
 }
 .recipes table {
-	width: 500px;
+	width: 750px;
 	margin-left:50px;
 	border:0;
-    /*border-collapse:collapse;*/
 	font-size:22px;
 	color:white;
 }
@@ -173,6 +179,10 @@ table  tr:nth-child(odd) {
 td {
     border: 1px solid black;
     padding: 5px;
+}
+.recipes img {
+	width:170px;
+	height:170px;
 }
 .howTo  .header{
 	background-color:#A0A0A0;
@@ -242,7 +252,6 @@ td {
 	color:White;
 }
 
-
 @media screen and (max-width: 1000px){
 	.accountAccessBar{
 		flex:1;
@@ -256,7 +265,7 @@ td {
 		font-size:13px;
 		font-family:'Roboto', sans-serif;
 	}
-	img{
+.pageHeader #logo img{
 		position:absolute;
 		width:200px;
 		height:50px;
@@ -292,6 +301,10 @@ td {
 	font-size:14px;
 	color:white;
 	}
+	.recipes img {
+	width:120px;
+	height:120px;
+}
 	.videos iframe{
 	display:flex;
     flex-direction:column;
@@ -323,7 +336,7 @@ td {
 		font-size:10px;
 		font-family:'Roboto', sans-serif;
 	}
-	img{
+.pageHeader #logo img{
 		width:150px;
 		height:50px;
 		position:absolute;
@@ -363,6 +376,10 @@ td {
 	font-size:12px;
 	color:white;
 	}
+	.recipes img {
+	width:50px;
+	height:50px;
+}
 	.footerBar{
 		font-size:10px;
 		padding:5px;
