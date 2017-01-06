@@ -10,7 +10,8 @@
 			<tr ng-repeat="recipe in recipes | filter:searchText">
 				<td> {{ recipe.type }} </td>
 				<td> {{ recipe.name }} </td>
-				<td> {{ recipe.location}} </td>
+				<td><a ng-href="/#/howTo/#{{ recipe.location }}">click for instructions</a></td>
+				<td><img ng-src="/img/{{recipe.image}}"></td>
 			</tr>
 		</tbody>
 	</table>
