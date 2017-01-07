@@ -29,6 +29,7 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 - Attractive looking font from google fonts used for the main logo and custom made images.
 - Nav bar with button links that change colour with mouse hover over them.
 - Active Search box to be able to search a database of recipes.
+- Database of recipes with clickable links to instructions page.
 - Responsive web design changes the layout when viewed on either mobile, tablet or full size desktop screens.
 
 ### Features Left to Implement
@@ -37,7 +38,6 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 	- Login.
 	- Logout.
 	- Newsletter Email signup.
-	- Content for the body section of the web pages.
 	- Shopping basket.
 	- All the AngularJS code to make the site work.
 
