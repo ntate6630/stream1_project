@@ -14,8 +14,15 @@ a{
 		rgba(255,255, 255, 0.5) 53%,
 		rgba(255, 255, 255, 0) 100%);
 }
+
+.header{
+	margin-left:150px;
+	margin-right:150px;
+}
 .accountAccessBar{
 	flex:1;
+	margin-left:150px;
+	margin-right:150px;
 	width:auto;
 	height:20px;
 	text-align:right;
@@ -29,6 +36,8 @@ a{
 	color:Blue;
 }
 .pageHeader{
+	margin-left:150px;
+	margin-right:150px;
 	display:flex;
 	width:auto;
     height:100px;
@@ -66,6 +75,7 @@ input{
     text-shadow:2px 2px #000000;
 } 
 .pageHeader #logo img{
+	margin-left:150px;
 	opacity:0.8;
 	width:500px;
 	height:100px;
@@ -77,6 +87,8 @@ input{
 .flex-navbar{
 	display:flex;
 	flex-flow:row wrap;
+	margin-left:150px;
+	margin-right:150px;
   	width:auto;
     height: 34px;
     background-color:White;
@@ -164,8 +176,8 @@ input{
 	text-shadow:2px 2px #000000;
 }
 .recipes table {
+	margin-left:150px;
 	width: 750px;
-	margin-left:50px;
 	border:0;
 	font-size:22px;
 	color:white;
@@ -240,6 +252,8 @@ td {
 	padding-left:200px;
 }
 .footerBar{
+	margin-left:150px;
+	margin-right:150px;
 	display:flex;
     flex-direction:row;
 	margin-top:20px;
@@ -252,20 +266,21 @@ td {
 	color:White;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
 	.accountAccessBar{
 		flex:1;
 		width:auto;
+		margin-left:0px;
+		margin-right:0px;
 		text-align:right;
 		padding:50;
-		/*word-spacing:-10em;*/			 /*Fixed- removed "word-spacing:-10em;" because chrome couldnt display the text "Login Logout Register" properly*/
 	}
 	.accountAccess a{
 		margin-right:10px;
 		font-size:13px;
 		font-family:'Roboto', sans-serif;
 	}
-.pageHeader #logo img{
+	.pageHeader #logo img{
 		position:absolute;
 		width:200px;
 		height:50px;
@@ -281,12 +296,14 @@ td {
 		font-size:18px;
 	}
 	.pageHeader{
+		margin-left:0px;
+		margin-right:0px;
 		height:80px;
 	}
 	.searchBar{
-		margin-top:50px;
+		margin-top:40px;
 		margin-left:50%;
-		width:180px;
+		width:160px;
 		height:20px;
 		padding:3px 50px 5px 3px;
 		border-radius:5px;
@@ -294,7 +311,22 @@ td {
 	input{
 		height:18px;
 	}
-.recipes table {
+	.pageHeader .magnifying_glass img {
+		z-index:1;
+		margin-top:42px;
+		margin-left:-38px; 
+		width:23px;
+		height:23px;
+	}
+	.flex-navbar{
+		margin-left:0px;
+		margin-right:0px;
+	}
+	.header{
+	margin-left:0px;
+	margin-right:0px;
+}
+	.recipes table {
 	width: auto;
 	margin-left:50px;
     border-collapse:collapse;
@@ -310,8 +342,8 @@ td {
     flex-direction:column;
 	top:150px;
 	margin-left:50px;
-	width:640px;
-	height:480px;
+	width:480px;
+	height:320px;
 	margin-bottom:100px;
 	}
 	.container .content{
@@ -320,6 +352,12 @@ td {
 	margin-right:50px;
 	padding-top:20px;
 	padding-left:40px;
+	}
+	.footerBar{
+		margin-left:0px;
+		margin-right:0px;
+		font-size:10px;
+		padding:5px;
 	}
 }
 	
@@ -366,6 +404,13 @@ td {
 		padding:2px 57px 2px 2px;
 		border-radius:2px;
 	}
+	.pageHeader .magnifying_glass img {
+	z-index:1;
+	margin-top:78px;
+	margin-left:-36px; 
+	width:19px;
+	height:19px;
+}
 	input{
 		height:16px;
 	}
@@ -381,6 +426,8 @@ td {
 	height:50px;
 }
 	.footerBar{
+		margin-left:0px;
+		margin-right:0px;
 		font-size:10px;
 		padding:5px;
 	}
