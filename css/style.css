@@ -14,7 +14,6 @@ a{
 		rgba(255,255, 255, 0.5) 53%,
 		rgba(255, 255, 255, 0) 100%);
 }
-
 .header{
 	margin-left:150px;
 	margin-right:150px;
@@ -44,6 +43,7 @@ a{
     background-color:#D0F040;
 }
 .searchBar{
+	display: -webkit-flex;
 	flex-direction:row;
 	margin-top:50px;
 	margin-left:20%;
@@ -85,12 +85,13 @@ input{
 	z-index:-1;
 }
 .flex-navbar{
+	display: -webkit-flex;
 	display:flex;
 	flex-flow:row wrap;
 	margin-left:150px;
 	margin-right:150px;
   	width:auto;
-    height: 34px;
+    height: 36px;
     background-color:White;
 }
 .button:hover {
@@ -101,7 +102,7 @@ input{
 	border-radius:5px;
     width:100px;
     height:25px;
-    margin:2px;
+    margin:4px;
 	color:#FFFFFF;
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
@@ -254,6 +255,7 @@ td {
 .footerBar{
 	margin-left:150px;
 	margin-right:150px;
+	display: -webkit-flex;
 	display:flex;
     flex-direction:row;
 	margin-top:20px;
@@ -347,7 +349,7 @@ td {
 	margin-bottom:100px;
 	}
 	.container .content{
-	height:800px;
+	height:auto;
 	margin-left:50px;
 	margin-right:50px;
 	padding-top:20px;
@@ -397,8 +399,8 @@ td {
 		font-size:10px;
 	}
 	.searchBar{
-		margin-top:75px;
-		margin-left:73px;
+		margin-top:78px;
+		margin-left:78px;
 		width:150px;
 		height:20px;
 		padding:2px 57px 2px 2px;
@@ -406,13 +408,16 @@ td {
 	}
 	.pageHeader .magnifying_glass img {
 	z-index:1;
-	margin-top:78px;
+	margin-top:80px;
 	margin-left:-36px; 
 	width:19px;
 	height:19px;
 }
 	input{
 		height:16px;
+	}
+	.flex-navbar{
+		height: 58px;
 	}
 	.recipes table {
 	width: auto;
@@ -425,12 +430,6 @@ td {
 	width:50px;
 	height:50px;
 }
-	.footerBar{
-		margin-left:0px;
-		margin-right:0px;
-		font-size:10px;
-		padding:5px;
-	}
 	.videos iframe{
 	display:flex;
     flex-direction:column;
@@ -441,7 +440,7 @@ td {
 	margin-bottom:50px;
 	}
 	.container .content{
-	height:800px;
+	height:auto;
 	margin-left:1px;
 	margin-right:1px;
 	padding-top:20px;
@@ -452,5 +451,11 @@ td {
 	padding-left:10px;
 	font-size:10px;
 	text-shadow:1px 1px #000000;
+	}
+	.footerBar{
+		margin-left:0px;
+		margin-right:0px;
+		font-size:10px;
+		padding:5px;
 	}
 }
