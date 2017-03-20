@@ -39,7 +39,6 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 	- Logout.
 	- Newsletter Email signup.
 	- Shopping basket.
-	- All the AngularJS code to make the site work.
 
 ## Tech Used
 
@@ -56,7 +55,7 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 
 ### Getting the code up and running
 1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
-2. After you've that you'll need to make sure that you have **npm** and **bower** installed
+2. After you've done that you'll need to make sure that you have **npm** and **bower** installed
   1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
   2. Once you've done this you'll need to run the following command:
   	 `npm install -g bower # this may require sudo on Mac/Linux`
@@ -79,3 +78,20 @@ function greet(target) {
 
 greet("World");
 ```
+
+## Site Testing
+
+The site was tested on the following browswers:
+
+- Internet explorer
+	- Appearance:
+		The site dispalyed correctly apart from a few aspects. The image behind the "Cooking Guide" logo text disappears when the site is viewed on screens above 1200px.
+		When the screen size is anything below 1200px the logo displays correctly but the search box loses its orange box.
+		The site functions as intended at all screen sizes from 320px an dupwards.
+- Safari on Mac OSX
+- Safari on Mac OSX 
+- Firefox Developer Edition
+- Google Chrome
+- Iphone 4S
+- Iphone 7
+- Ipad 3
