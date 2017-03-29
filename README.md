@@ -87,7 +87,7 @@ The site was tested on the following browswers:
 	- Appearance:
 		The site dispalyed correctly apart from a few aspects. The image behind the "Cooking Guide" logo text disappears when the site is viewed on screens above 1200px.
 		When the screen size is anything below 1200px the logo displays correctly but the search box loses its orange box.
-		The site functions as intended at all screen sizes from 320px an dupwards.
+		The site functions as intended at all screen sizes from 320px and upwards.
 - Safari on Mac OSX
 - Safari on Mac OSX 
 - Firefox Developer Edition
