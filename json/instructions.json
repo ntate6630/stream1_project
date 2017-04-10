@@ -1,0 +1,182 @@
+[
+   {
+      "name":{"dish": "Baked salmon with herbs",
+               "type": "Fish"
+      },
+      "image": "baked_salmon_with_herbs.jpg",
+      "ingredients": {
+         "i1": "2 pounds salmon fillet, cut in half",
+         "i2": "3 tablespoons butter",
+         "i3": "1 tablespoon dried basil",
+         "i4": "1/4 teaspoon salt",
+         "i5": "1/4 teaspoon ground pepper, or to taste",
+         "i6": "1 lemon, sliced",
+         "i7": " ",
+         "i8": " ",
+         "i9": " ",
+         "i10": " ",
+         "i11": " ",
+         "i12": " ",
+         "i13": " "
+      },
+      "cooking_method": {
+         "s1": "Preheat oven to 375 degrees F.",
+         "s2": "Place salmon into baking dish, skin down.",
+         "s3": "Top with pieces of butter.",
+         "s4": "Sprinkle with dried basil, salt and pepper.",
+         "s5": "Top with lemon slices.",
+         "s6": "Cover tightly with foil. Bake 30-40 minutes, until flaky and pale pink inside (test with fork), serve hot.",
+         "s7": " ",
+         "s8": " ",
+         "s9": " ",
+         "s10": " ",
+         "s11": " ",
+         "s12": " ",
+         "s13": " "
+      }
+   },
+   {
+      "name":{"dish": "Apple pie",
+               "type": "Dessert"
+      },
+      "image": "applepie.jpg",
+      "ingredients": {
+         "i1": "255g/9oz plain flour",
+         "i2": "pinch of salt",
+         "i3": "140g/5oz hard margarine or butter",
+         "i4": "teaspoon cold water",
+         "i5": "3 large Bramley cooking apples, chopped, stewed and cooled",
+         "i6": "sugar, add to taste",
+         "i7": " ",
+         "i8": " ",
+         "i9": " ",
+         "i10": " ",
+         "i11": " ",
+         "i12": " ",
+         "i13": " "
+      },
+      "cooking_method": {
+         "s1": "Preheat the oven to 200C/400F/Gas 6.",
+         "s2": "Sieve the flour and salt into a bowl.",
+         "s3": "Mix in the margarine or butter until the mixture resembles fine breadcrumbs.",
+         "s4": "Add the cold water to the flour mixture. Using a knife, mix the water into the flour, using your hand to firm up the mixture. The pastry should be of an even colour and suitable consistency for rolling.",
+         "s5": "Divide the pastry into two halves. Take one half and roll it out so that it is big enough to cover an 20cm/8in enamel or aluminium plate. Trim the edges with a knife using the edge of the plate as your guide.",
+         "s6": "Cover the pastry with the stewed apples and sprinkle with sugar to taste.",
+         "s7": "Roll out the other half of the pastry. Moisten the edge of the bottom layer of pastry and place the second piece on top.",
+         "s8": "Press down on the pastry edges, making sure that they are properly sealed. Trim off any excess pastry with a knife in a downward motion, again using the plate as your guide.",
+         "s9": "Flute the edges with a pinching action using your fingers and thumb.",
+         "s10": "Prick the surface of the pastry lightly before placing the pie in the oven. Cook for 20-30 minutes.",
+         "s11": "Slide on to a serving plate, dust with caster sugar and serve.",
+         "s12": " ",
+         "s13": " "
+      }
+   },
+   {
+      "name":{"dish": "Minestrone soup",
+      "type": "Soup"
+      },
+      "image": "minestrone_soup.jpg",
+      "ingredients": {
+         "i1": "1 teaspoon of olive oil",
+         "i2": "200g/7oz streaky bacon or lean back-bacon, rind removed, finely chopped",
+         "i3": "2 large carrots, peeled and roughly chopped",
+         "i4": "6 garlic cloves, thinly sliced",
+         "i5": "2 onions, roughly chopped",
+         "i6": "2 potatoes, such as Maris Peer potatoes, roughly chopped",
+         "i7": "1 table spoon of tomato purée",
+         "i8": "400g tin chopped tomatoes",
+         "i9": "0.75 litres/1½ pints reduced-salt vegetable stock",
+         "i10": "3 courgettes, trimmed and roughly chopped",
+         "i11": "1 large handful soup pasta",
+         "i12": "1 handful fresh flatleaf parsley, leaves finely chopped",
+         "i13": " "
+      },
+      "cooking_method": {
+         "s1": "Heat the oil in a large saucepan over a medium heat. Add the bacon and fry for 2-3 minutes, or until cooked and starting to brown.",
+         "s2": "Add the carrots, garlic and onions and fry for 4-5 minutes.",
+         "s3": "Add the potatoes and fry for 4-5 minutes, stirring occasionally, until softened.",
+         "s4": "Stir in the tomato purée and cook for 1 minute, then add the tomatoes, bouquet garni and stock and bring to the boil. Reduce the heat, then simmer gently for 30 minutes.",
+         "s5": "Add the courgettes and soup pasta and return to the boil. Reduce the heat, cover the pan with the lid, then simmer for 5-8 minutes, or until the pasta is tender.",
+         "s6": "Discard the bouquet garni.",
+         "s7": "To serve, ladle the soup into bowls, then sprinkle over the parsley and Parmesan.",
+         "s8": " ",
+         "s9": " ",
+         "s10": " ",
+         "s11": " ",
+         "s12": " ",
+         "s13": " "
+      }
+   },
+   {
+      "name":{ "dish": "Roast beef",
+      "type": "Meat"
+      },
+      "image": "roast_beef.jpg",
+      "ingredients": {
+         "i1": "2.75kg/6lb 2oz whole beef sirloin, fat and sinew trimmed",
+         "i2": "250g/9oz beef dripping or lard",
+         "i3": "Roast Potatoes",
+         "i4": "Brussels sprouts",
+         "i5": " ",
+         "i6": " ",
+         "i7": " ",
+         "i8": " ",
+         "i9": " ",
+         "i10": " ",
+         "i11": " ",
+         "i12": " ",
+         "i13": " "
+      },
+      "cooking_method": {
+         "s1": "Prepare the beef. Preheat the oven to 200C/180C Fan/Gas 6.",
+         "s2": "Score the fat of the beef in a criss-cross pattern using a sharp knife, then season the beef generously with salt and pepper.",
+         "s3": "Heat a frying pan over a high heat. When the pan is very hot, add 25g/1oz of the beef dripping and, when it has melted, fry the beef on all sides until browned all over.",
+         "s4": "Place the beef joint, fat side facing downwards, into a roasting tray and roast for 45-50 minutes (for medium-rare) or longer until cooked to your liking – although bear in mind that the meat will continue to cook as it rests. Turn the beef joint halfway through the cooking time.",
+         "s5": "When the beef is cooked to your liking, transfer it to a large plate, cover with aluminium foil and set aside to rest for 30 minutes.",
+         "s6": "Serve the beef on a platter, surrounded by roast potatoes on one side and Brussels sprouts on the other. Serve vegetables on a separate platter and add sauce in a gravy boat.",
+         "s7": " ",
+         "s8": " ",
+         "s9": " ",
+         "s10": " ",
+         "s11": " ",
+         "s12": " ",
+         "s13": " "
+      }
+   },
+   {
+      "name":{"dish": "Custard tart",
+               "type": "Dessert"
+      },
+      "image": "custard_tart.jpg",
+      "ingredients": {
+         "i1": "22cm/9in shortcrust pastry case",
+         "i2": "300ml/10 fl oz full-fat milk",
+         "i3": "200ml/7 fl oz double cream",
+         "i4": "2 large free-range eggs",
+         "i5": "2 free-range egg yolks",
+         "i6": "80g/3oz caster sugar",
+         "i7": "Pinch ground nutmeg",
+         "i8": " ",
+         "i9": " ",
+         "i10": " ",
+         "i11": " ",
+         "i12": " ",
+         "i13": " "
+      },
+      "cooking_method": {
+         "s1": "Preheat the oven to 190C/375/Gas 5.",
+         "s2": "Bake the pastry case for 15 minutes until firm and browned slightly.",
+         "s3": "Remove the case and turn the oven down to 160C/325F/Gas 3.",
+         "s4": "In a medium saucepan, bring the milk and cream nearly to the boil.",
+         "s5": "Beat the eggs, yolks and sugar together in a bowl.",
+         "s6": "Pour the hot milk over them and beat gently.",
+         "s7": "Pour the mixture into the pastry case and grate a little nutmeg on top.",
+         "s8": "Bake for 40 minutes until just set. Remove from the oven and leave to cool before serving.",
+         "s9": " ",
+         "s10": " ",
+         "s11": " ",
+         "s12": " ",
+         "s13": " "
+      }
+   }
+]

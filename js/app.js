@@ -1,38 +1,33 @@
-angular.module('cookingApp', ['ngRoute', 'angular-storage', 'RouteControllers', 'UserService', 'UserStatusDirective']);
+angular.module('SearchApp', ['ngRoute', 'RouteControllers', 'UserService', 'UserJsonService']);
 
-angular.module('cookingApp').config(function($routeProvider) {
+angular.module('SearchApp').config(function($locationProvider, $routeProvider) {
+    $locationProvider.html5Mode(true);  // Enable href routing without hashes
 
-	$routeProvider
-	.when('/', {
-		templateUrl: 'templates/home.html',
-		controller: 'HomeController'
-	})
-	.when('/accounts/register', {
-		templateUrl: 'templates/register.html',
-		controller: 'RegisterController'
-	})
-	.when('/accounts/login', {
+    $routeProvider
+    .when('/', {
+        templateUrl: 'templates/home.html',
+        controller: 'HomeController'
+    })
+    .when('/recipes', {
+        templateUrl: 'templates/recipes.html'
+    })
+    .when('/howTo', {
+        templateUrl: 'templates/howto.html',
+        controller: 'HowToController'
+    })
+    .when('/video', {
+        templateUrl: 'templates/video.html'
+    })
+    .when('/accounts/logout', {
+        templateUrl: 'templates/logout.html',
+        controller: 'LogoutController'
+    })
+    .when('/accounts/login', {
 		templateUrl: 'templates/login.html',
 		controller: 'LoginController'
 	})
-	.when('/accounts/logout', {
-		templateUrl: 'templates/logout.html',
-		controller: 'LogoutController'
-	})
-	.when('/recipes', {
-		templateUrl: 'templates/recipes.html',
-		controller: 'SearchBarController',
-	})
-	.when('/howTo', {
-		templateUrl: 'templates/howto.html',
-		controller: 'HowToController',
-	})
-	.when('/video', {
-		templateUrl: 'templates/video.html',
-		controller: 'VideoController',
-	})
-	.when('/shop', {
-		templateUrl: 'templates/shop.html',
-		controller: 'ShopController',
+    .when('/accounts/register', {
+		templateUrl: 'templates/register.html',
+		controller: 'RegisterController'
 	});
 });
