@@ -1,461 +1,207 @@
+body {
+    left:250px;
+    right:250px;
+}
 
-body{
-	background-color:#700000;  /* Set main background color to brown. */
-
-}
-a{
-	text-decoration: none;	/* Remove underscore from clickable links (looks much nicer!) */
-	color:white;
-}
-.gradient{			
-	background: linear-gradient(90deg,  /* Apply linear gradient to Account access bar, Header, NAV bar, and Title bar */
-		rgba(255, 255, 255, 0) 30%,
-		rgba(255, 255, 255, 0.5) 40%,
-		rgba(255,255, 255, 0.5) 53%,
-		rgba(255, 255, 255, 0) 100%);
-}
-.header{
-	margin-left:150px;
-	margin-right:150px;
-}
-.accountAccessBar{
-	flex:1;
-	margin-left:150px;
-	margin-right:150px;
-	width:auto;
-	height:20px;
-	text-align:right;
-	word-spacing:1em;
-	background-color:#D0F040;
-}
-.accountAccess a{
-	margin-right:10px;
-	font-size:17px;
-	font-family:'Roboto', sans-serif;
-	color:Blue;
-}
-.pageHeader{
-	margin-left:150px;
-	margin-right:150px;
-	display:flex;
-	width:auto;
-    height:100px;
+#banner {
+    display:flex;
+    z-index:-1;
     background-color:#D0F040;
 }
-.searchBar{
-	display: -webkit-flex;
-	flex-direction:row;
-	margin-top:50px;
-	margin-left:20%;
-	width:180px;   /* make changes for the other screen sizes too */
-	height:20px;
-	padding:5px 40px 11px 5px;
-	border-radius:5px;
-	background-color:#FFD250;
-	box-shadow: 2px 2px 5px #888888;
-}
-.pageHeader .magnifying_glass img {
-	z-index:1;
-	margin-top:54px;
-	margin-left:-45px; 
-	width:27px;
-	height:27px;
-}
-input{
-	height:22px;
-}
-#logo{
-	z-index:1;
-	margin-left:50px;
-	margin-top:-45px;
-	text-align:left;
-	font-size:35px;
-	font-family: 'Pinyon Script', cursive;
-	color:White;
+
+#header #banner h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size:100px;
+    color:white;
     text-shadow:2px 2px #000000;
-} 
-.pageHeader #logo img{
-	margin-left:150px;
-	opacity:0.8;
-	width:500px;
-	height:100px;
-	position:absolute;
-	left:50px;
-	top:29px;
-	z-index:-1;
 }
-.flex-navbar{
-	display: -webkit-flex;
-	display:flex;
-	flex-flow:row wrap;
-	margin-left:150px;
-	margin-right:150px;
-  	width:auto;
-    height: 36px;
-    background-color:White;
+
+#header #banner img {
+    height:150px;
 }
-.button:hover {
-	background-color:#800010;
+
+.searchBar {
+    background-color:#D0F040;
+    padding-left:300px;
 }
-.button {
-    background-color:Brown;
-	border-radius:5px;
-    width:100px;
-    height:25px;
-    margin:4px;
-	color:#FFFFFF;
-	font-family: 'Roboto', sans-serif;
-	font-size:16px;
-	text-align:center;
-	box-shadow: 2px 2px 5px #888888;
+
+.navbar-nav{
+    background-color:#D0F040;
 }
-.register .header{
-	background-color:#A0A0A0;/*#FFD250;*/
-	marging-left:50px;
-	padding-left:50px;
-	color:white;
-	text-shadow:2px 2px #000000;
+.container {
+    margin-top:20px;
 }
-.register .container{
-	background-color:white;
-	height:400px;
-	margin-left:150px;
-	margin-right:150px;
-	padding-top:20px;
-	padding-left:200px;
-}
-.login .header{
-	background-color:#A0A0A0;/*#FFD250;*/
-	marging-left:50px;
-	padding-left:50px;
-	color:white;
-	text-shadow:2px 2px #000000;
-}
-.login .container{
-	background-color:white;
-	height:400px;
-	margin-left:150px;
-	margin-right:150px;
-	padding-top:20px;
-	padding-left:200px;
-}
-.logout .header{
-	background-color:#A0A0A0;/*#FFD250;*/
-	marging-left:50px;
-	padding-left:50px;
-	color:white;
-	text-shadow:2px 2px #000000;
-}
-.logout .container{
-	background-color:white;
-	height:400px;;
-	margin-left:150px;
-	margin-right:150px;
-	padding-top:20px;
-	padding-left:200px;
-}
-.home .header{
-	background-color:#A0A0A0;
-	marging-left:50px;
-	padding-left:50px;
-	color:white;
-	text-shadow:2px 2px #000000;
-}
-.home .content{
-	background-color:white;
-	height:400px;
-	margin-left:150px;
-	margin-right:150px;
-	padding-top:20px;
-	padding-left:200px;
-}
-.recipes  .header{
-	background-color:#A0A0A0;
-	marging-left:50px;
-	padding-left:50px;
-	color:white;
-	text-shadow:2px 2px #000000;
-}
-.recipes table {
-	margin-left:150px;
-	width: 750px;
-	border:0;
-	font-size:22px;
-	color:white;
-}
-table tr:nth-child(even) {
-     background-color:#370010;
-}
-table  tr:nth-child(odd) {
-     background-color:#401010;
-}
-td {
-    border: 1px solid black;
-    padding: 5px;
-}
-.recipes img {
+.table img {
 	width:170px;
 	height:170px;
 }
-.howTo  .header{
-	background-color:#A0A0A0;
-	marging-left:50px;
-	padding-left:50px;
-	color:white;
-	text-shadow:2px 2px #000000;
+
+.table {
+    width:auto;
+    border:0;
 }
-.howTo .content{
-	background-color:white;
-	height:auto;
-	margin-left:150px;
-	margin-right:150px;
-	padding-top:20px;
-	padding-left:200px;
-}
-.howToImages img{  
-	z-index:100;
-	flex-direction:row;  
-    flex-wrap:wrap;
-	margin-top:400px;
-	margin-left:880px;
-	width:150px;
-	height:150px;
-}
-.videos .header{
-	background-color:#A0A0A0;
-	marging-left:50px;
-	padding-left:50px;
-	color:white;
-	text-shadow:2px 2px #000000;
-}
-.videos iframe{
+
+.videos iframe {
 	display:flex;
     flex-direction:column;
 	top:150px;
-	margin-left:400px;
+	margin-left:250px;
 	width:640px;
 	height:480px;
 	margin-bottom:100px;
 }
-.shop .header{
-	background-color:#A0A0A0;
-	marging-left:50px;
-	padding-left:50px;
-	color:white;
-	text-shadow:2px 2px #000000;
-}
-.shop .content{
-	background-color:white;
-	height:800px;
-	margin-left:150px;
-	margin-right:150px;
-	padding-top:20px;
-	padding-left:200px;
-}
-.footerBar{
-	margin-left:150px;
-	margin-right:150px;
-	display: -webkit-flex;
-	display:flex;
-    flex-direction:row;
-	margin-top:20px;
-	padding-left:20px;
-	width:auto;
-	height:120px;
-	background-color:#400010;
-	font-size:12px;
-	font-family:'Roboto', sans-serif;
-	color:White;
+
+#footer{
+    margin-top:250px;
 }
 
-@media screen and (max-width: 1200px){
-	.accountAccessBar{
-		flex:1;
-		width:auto;
-		margin-left:0px;
-		margin-right:0px;
-		text-align:right;
-		padding:50;
-	}
-	.accountAccess a{
-		margin-right:10px;
-		font-size:13px;
-		font-family:'Roboto', sans-serif;
-	}
-	.pageHeader #logo img{
-		position:absolute;
-		width:200px;
-		height:50px;
-		margin-left:-50px;
-		margin-top:-5px;
-		z-index:-1
-	}
-	#logo{
-		position:absolute;
-		text-align:left;
-		margin-top:-15px;
-		margin-left:35px;
-		font-size:18px;
-	}
-	.pageHeader{
-		margin-left:0px;
-		margin-right:0px;
-		height:80px;
-	}
-	.searchBar{
-		margin-top:40px;
-		margin-left:50%;
-		width:160px;
-		height:20px;
-		padding:3px 50px 5px 3px;
-		border-radius:5px;
-	}
-	input{
-		height:18px;
-	}
-	.pageHeader .magnifying_glass img {
-		z-index:1;
-		margin-top:42px;
-		margin-left:-38px; 
-		width:23px;
-		height:23px;
-	}
-	.flex-navbar{
-		margin-left:0px;
-		margin-right:0px;
-	}
-	.header{
-	margin-left:0px;
-	margin-right:0px;
+
+
+@media screen and (max-width: 768px) {
+    body {
+        left:50px;
+    }
+
+    .searchBar {
+    margin-top: 0px;
+    margin-left:20px;
 }
-	.recipes table {
-	width: auto;
-	margin-left:50px;
-    border-collapse:collapse;
-	font-size:14px;
-	color:white;
-	}
-	.recipes img {
-	width:120px;
-	height:120px;
-}
-	.videos iframe{
+
+     .container h1 {
+        font-size:22px;
+    }
+
+       Li {
+        font-size:14px;
+    }
+
+    .nav {
+        padding:2px;
+    }
+
+    .table img {
+	width:80px;
+	height:80px;
+    }
+    .table {
+        margin-left:10px;
+        width:auto;
+        border:0;
+    }
+
+    td h2 {
+        font-size:14px;
+    }
+
+    .videos iframe{
 	display:flex;
     flex-direction:column;
 	top:150px;
-	margin-left:50px;
+	margin-left:0;
 	width:480px;
 	height:320px;
 	margin-bottom:100px;
 	}
-	.container .content{
-	height:auto;
-	margin-left:50px;
-	margin-right:50px;
-	padding-top:20px;
-	padding-left:40px;
-	}
-	.footerBar{
-		margin-left:0px;
-		margin-right:0px;
-		font-size:10px;
-		padding:5px;
-	}
 }
-	
-@media screen and (max-width: 570px){
-	.accountAccessBar{
-		flex:1;
-		width:auto;
-		/*word-spacing:-10em;*/        /*Fixed- removed "word-spacing:-10em;" because chrome couldnt display the text "Login Logout Register" properly*/ 
-		text-align:center;
-		padding:50;
-	}
-	.accountAccess a{
-		margin-right:20px;
-		font-size:10px;
-		font-family:'Roboto', sans-serif;
-	}
-.pageHeader #logo img{
-		width:150px;
-		height:50px;
-		position:absolute;
-		margin-left:-50px;
-		margin-top:-25px;
-		z-index:-1
-	}
-	#logo{
-		text-align:left;
-		margin-top:-5px;
-		margin-left:50px;
-		font-size:12px;
-	}
-	.pageHeader{
-		height:50px;
-	}
-	.button{
-		height:21px;
-		width:67px;
-		font-size:10px;
-	}
-	.searchBar{
-		margin-top:78px;
-		margin-left:78px;
-		width:150px;
-		height:20px;
-		padding:2px 57px 2px 2px;
-		border-radius:2px;
-	}
-	.pageHeader .magnifying_glass img {
-	z-index:1;
-	margin-top:80px;
-	margin-left:-36px; 
-	width:19px;
-	height:19px;
-}
-	input{
-		height:16px;
-	}
-	.flex-navbar{
-		height: 58px;
-	}
-	.recipes table {
-	width: auto;
-	margin-left:0px;
-    border-collapse:collapse;
-	font-size:12px;
-	color:white;
-	}
-	.recipes img {
-	width:50px;
-	height:50px;
-}
-	.videos iframe{
+
+@media screen and (max-width: 560px) {
+    body {
+        left:20px;
+    }
+
+    .container h1 {
+        font-size:16px;
+    }
+
+    .searchBar {
+        padding-left: 0px;
+        margin-top:0px;
+    }
+
+       Li {
+        font-size:14px;
+    }
+
+    .nav {
+        padding:2px;
+    }
+
+    .table img {
+	width:80px;
+	height:80px;
+    }
+    .table {
+        margin-left:10px;
+        width:auto;
+        border:0;
+    }
+
+    td h2 {
+        font-size:14px;
+    }
+
+    .videos iframe{
 	display:flex;
     flex-direction:column;
 	top:150px;
-	margin-left:0px;
+	margin-left:0;
+	width:480px;
+	height:320px;
+	margin-bottom:100px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        left:2px;
+    }
+
+    #header #banner h1 {
+    font-size:50px;
+}
+
+    .searchBar {
+        margin-top:0px;
+        padding-left: 0px;
+    }
+
+    .container h1 {
+        font-size:14px;
+    }
+
+    Li {
+        font-size:12px;
+    }
+
+    .table img {
+	width:50px;
+	height:50px;
+    }
+    .table {
+        margin-left:2px;
+        width:auto;
+        border:0;
+    }
+
+    td h2 {
+        font-size:12px;
+    }
+
+    td h3 {
+        font-size:14px;
+    }
+
+    tr td {
+        font-size:10px;
+    }
+
+    .videos iframe {
+	display:flex;
+    flex-direction:column;
+	top:150px;
+	margin-left:-30px;
 	width:auto;
 	height:240px;
 	margin-bottom:50px;
-	}
-	.container .content{
-	height:auto;
-	margin-left:1px;
-	margin-right:1px;
-	padding-top:20px;
-	padding-left:5px;
-	}
-	.container .header{
-	margin-top:20px;
-	padding-left:10px;
-	font-size:10px;
-	text-shadow:1px 1px #000000;
-	}
-	.footerBar{
-		margin-left:0px;
-		margin-right:0px;
-		font-size:10px;
-		padding:5px;
 	}
 }
