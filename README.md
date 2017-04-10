@@ -95,3 +95,17 @@ The site was tested on the following browswers:
 - Iphone 4S
 - Iphone 7
 - Ipad 3
+
+
+
+## Credits
+
+The following sites and organizations were used in creating this project. Credits to the respective owners and thanks.
+
+- The Learning People and Code Institute - https://www.codeinstitute.net/
+- Jessamyn Smith - Code Institute Mentor - https://github.com/jessamynsmith
+- AngularJS Documentation - https://angularjs.org/
+- For installing npm and libraries - https://nodejs.org/en/
+- Tutorials - http://www.webchannel24.com/acciocode/
+- Tutorials - https://www.w3schools.com/
+- Recipe and cooking information - http://www.bbc.co.uk/food/recipes/maryhenrysproperappl_67463
