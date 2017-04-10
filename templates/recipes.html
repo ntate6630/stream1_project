@@ -1,16 +1,18 @@
-<div ng-controller="recipes" class="container recipes">
-	<div class="header gradient">
-		<h1>Recipes</h1>
-	</div>
+<div ng-controller="HowToController" class="container instructions">
 
-	<table>
-		<tbody>
-			<tr ng-repeat="recipe in recipes | filter:searchText">
-				<td> {{ recipe.type }} </td>
-				<td> {{ recipe.name }} </td>
-				<td><a ng-href="/#/howTo/#{{ recipe.location }}">click for instructions</a></td>
-				<td><img ng-src="/img/{{recipe.image}}"></td>
-			</tr>
-		</tbody>
-	</table>
+		<h1>Recipes</h1>
+
+    <div>
+        <table class="table">
+            <tbody data-ng-repeat="recipe in cookingInstructions | filter:search | orderBy:'dish'">
+                <tr>
+                    <td><h2> {{ recipe.name.type }} </h2></td>
+                    <td><h2> {{ recipe.name.dish }} </h2></td>
+                    <td><img ng-src="/img/{{recipe.image}}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+
+
