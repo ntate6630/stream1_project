@@ -71,14 +71,6 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 7. Make changes to the code and if you think it belongs in here then just submit a pull request
 
 
-```javascript
-function greet(target) {
-	console.log("Hello, " + target + "!");
-}
-
-greet("World");
-```
-
 ## Site Testing
 
 The site was tested on the following browswers:
