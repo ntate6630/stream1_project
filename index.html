@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app='SearchApp'>
 <head>
-    <title>Angular Todo</title>
+    <title>Stream One Project</title>
     <base href="/"> <!-- needed for Angular HTML5 mode -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -14,8 +14,8 @@
 <body>
     <div class="container">
         <div id="header">
-            <div id="banner">
-                <img src="/img/image1.png">
+            <div class="banner">
+                <img src="/img/banner.jpg"alt="">
                 <h1>Cooking Guide</h1>
             </div>
             <div>
@@ -30,25 +30,16 @@
                     <li><a href="/accounts/login">Login</a></li>
                     <li><a href="/accounts/register">Register</a></li>
                 </ul>
+                <div ng-binding="recipe" class="searchBar col-sm-12">
+                    <input type="text" ng-model="search.name.$" placeholder="Search">
+                </div>
             </div>
         </div>
-        <div>
-            <div ng-binding="recipe" class="searchBar col-sm-12">
-                <input type="text" ng-model="search.name.$" placeholder="Search">
-            </div>
-        </div>
-
         <div ng-view>
 
         </div>
 
         <div id="footer">
-            <p>Stream 1 project</p>
-            <p>Cooking Guide designed by Nicholas Tate</p>
-            <p>This website for education and demonstration purposes only</p>
-            <p>Copyright © Nicholas Tate. 2017.
-        </div>
-        <div>
             <ul class="nav navbar-nav navbar-left col-sm-12">
                 <li><a href="/accounts/logout">Logout</a></li>
                 <li><a href="/accounts/login">Login</a></li>
@@ -59,6 +50,11 @@
                 <li><a href="/video">Video</a></li>
                 <li><a href="/">Back to top of page</a></li>
             </ul>
+
+            <p>Stream 1 project</p>
+            <p>Cooking Guide designed by Nicholas Tate</p>
+            <p>This website for education and demonstration purposes only</p>
+            <p>Copyright © Nicholas Tate. 2017.
         </div>
     </div>
     <script src='js/app.js'></script>
