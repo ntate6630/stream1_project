@@ -25,6 +25,25 @@ body {
     margin: 0 auto;
 }
 
+.btn-success{
+    height:40px;
+    border:none;
+}
+
+.btn-success:hover,
+.btn-success.active {
+    color: blue !important;
+    background-color:lightgreen !important;
+    border:none;
+}
+
+.btn-success:focus,
+.btn-success.active {
+    color: blue !important;
+    background-color:orange !important;
+    border:none;
+}
+
 .searchBar {
     padding-left:300px;
     background-color:#D0F040;
@@ -41,6 +60,13 @@ body {
     border:0;
 }
 
+table tr:nth-child(even) {
+     background-color:#fefffc;
+}
+table  tr:nth-child(odd) {
+     background-color:#eeffce;
+}
+
 .videos iframe {
 	display:flex;
     flex-direction:column;
@@ -55,6 +81,10 @@ body {
     margin-top:250px;
     background-color:#D0F040;
 }
+
+#footer p{
+        margin-left:20px;
+    }
 
 @media screen and (max-width: 993px) {
     body {
@@ -118,6 +148,7 @@ body {
     }
 
     #footer p{
+        margin-left:10px;
         font-size:10px;
     }
 
