@@ -11,7 +11,6 @@ This is a cooking website to demonstrate usage of different technologies learnt 
 - This website will allow users to search and browse cooking recipes.
 - Follow the instructions for a recipe. 
 - Watch videos of people cooking.
-- Add items to a shopping basket to buy.
 - Create an account, login/logout.
 - Add personal details in a form to be able to buy the itmes in the shopping basket.
 - Sign up for an Email newsletter.
@@ -29,7 +28,7 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 - Attractive looking font from google fonts used for the main logo and custom made images.
 - Nav bar with button links that change colour with mouse hover over them.
 - Active Search box to be able to search a database of recipes.
-- Database of recipes with clickable links to instructions page.
+- JSON file Database of recipes
 - Responsive web design changes the layout when viewed on either mobile, tablet or full size desktop screens.
 
 ### Features Left to Implement
@@ -76,10 +75,6 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
 The site was tested on the following browswers:
 
 - Internet explorer
-	- Appearance:
-		The site dispalyed correctly apart from a few aspects. The image behind the "Cooking Guide" logo text disappears when the site is viewed on screens above 1200px.
-		When the screen size is anything below 1200px the logo displays correctly but the search box loses its orange box.
-		The site functions as intended at all screen sizes from 320px and upwards.
 - Safari on Mac OSX
 - Safari on Mac OSX 
 - Firefox Developer Edition
@@ -87,6 +82,9 @@ The site was tested on the following browswers:
 - Iphone 4S
 - Iphone 7
 - Ipad 3
+
+- Appearance:
+		On all the browsers the site functions satisfactorily at all screen sizes from 320px and upwards. Certain elements could be such as the Youtube videos could be re-sized and positioned better at different screen sizes but this requires more use of javascript and CSS.
 
 
 
