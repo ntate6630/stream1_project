@@ -6,9 +6,9 @@
 			<div class="col-sm-6">
 				<form name="loginForm" ng-submit="submitForm()" novalidate>
 					<div class="form-group">
-						<label>Email</label>
-						<input type="email" name="email" class="form-control" ng-model="user.username" required>
-						<p ng-show="loginForm.name.$pristine" class="help-block">Your Email address is required</p>
+						<label>Username</label>
+						<input type="text" name="username" class="form-control" ng-model="user.username" required>
+						<p ng-show="loginForm.username.$pristine" class="help-block">Your username is required</p>
 					</div>
 					<div class="form-group">
 						<label>Password</label>
