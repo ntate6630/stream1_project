@@ -16,8 +16,8 @@
 
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="password" name="password" class="form-control" ng-model="user.password" required>
-                    <p ng-show="registrationForm.password.$pristine" class="help-block">Your Email address is required</p>
+                    <input type="email" name="email" class="form-control" ng-model="user.email" required>
+                    <p ng-show="registrationForm.email.$pristine" class="help-block">Your Email address is required</p>
                 </div>
 
                 <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
