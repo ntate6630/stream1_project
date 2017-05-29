@@ -14,7 +14,7 @@ angular.module('RouteControllers', [])
 				$scope.token = results.data.token;
 				store.set('username', $scope.registrationUser.username);
 				store.set('authToken', $scope.token);
-				$location.path("/todo");
+				$location.path("/accounts/login");
 			}).catch(function(err) {
 				console.log(err.data);
 			});
@@ -39,19 +39,25 @@ angular.module('RouteControllers', [])
 		}
 	})
 
-    .controller('LoginController', function($scope, $location, UserService, store) {
+    .controller('LoginController', function($rootScope, $scope, $location, UserAPIService, store) {
 		var url = "https://morning-castle-91468.herokuapp.com/";
 
+		$scope.user = {
+			username: "",
+			password: ""
+		};
+		//$scope.loginStatus =
 		$scope.submitForm = function() {
 			if ($scope.loginForm.$valid) {
-				$scope.loginUser.username = $scope.user.username;
-				$scope.loginUser.password = $scope.user.password;
+				//$scope.loginUser.username = $scope.user.username;
+				//$scope.loginUser.password = $scope.user.password;
 
-				UserAPIService.callAPI(url + "accounts/api-token-auth", $scope.loginUser).then(function(results) {
+				UserAPIService.callAPI(url + "accounts/api-token-auth/", $scope.user).then(function(results) {
 					$scope.token = results.data.token;
-					store.set('username', $scope.loginUser.username);
+					$rootScope.username = $scope.user.username;
+					store.set('username', $scope.user.username);
 					store.set('authToken', $scope.token);
-					$location.path("/todo");
+					$location.path("/home");
 				}).catch(function(err) {
 					console.log(err);
 				});
