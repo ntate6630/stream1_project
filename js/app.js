@@ -1,4 +1,4 @@
-angular.module('SearchApp', ['ngRoute', 'RouteControllers', 'UserService', 'UserJsonService']);
+angular.module('SearchApp', ['ngRoute', 'RouteControllers', 'UserService', 'UserJsonService', 'angular-storage', "showUsernameDirective"]);
 
 angular.module('SearchApp').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
